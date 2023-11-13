@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px;
+}
+
+.modal-img {
+    margin: 0 auto;
+}

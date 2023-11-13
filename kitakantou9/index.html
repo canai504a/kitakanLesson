@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北関東学院</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <!-- js_jquery -->
+  <script src="./main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./img/logo_nav/favicon.png">
+</head>
+
+<body>
+  <!-- 共通 -->
+  <div class="logo logo_anime3" onclick="logobtn()">
+    <img src="./img/logo_nav/logo8.png" alt="" class="logo_anime2">
+  </div>
+
+  <div class="logo_area">
+    <img src="./img/logo_nav/logo8.png" alt="">
+  </div>
+
+  <div class="navi" onclick="navbtn()">
+    <p>menu</p>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="nav_area" id="navbtn">
+    <img src="./img/logo_nav/logo8.png" alt="" class="nav_logo">
+    <nav>
+      <ul>
+        <li class="navanime"><a href="#mainvisual" onclick="navbtn()">トップページ</a></li>
+        <li class="navanime"><a href="#curse" onclick="navbtn()">コース情報</a></li>
+        <li class="navanime"><a href="#review" onclick="navbtn()">修了生の声</a></li>
+        <li class="navanime"><a href="#teacher" onclick="navbtn()">スタッフ</a></li>
+        <li class="navanime"><a href="#procedure" onclick="navbtn()">お申込み手順</a></li>
+        <li class="navanime"><a href="#access" onclick="navbtn()">アクセス</a></li>
+      </ul>
+    </nav>
+    <div class="telbox navanime">
+      <p>北関東学院 事務局</p>
+      <p>TEL 011-232-5508</p>
+    </div>
+    <a href="https://ameblo.jp/kps-sapporo/" target="_blank">
+      <img src="./img/logo_nav/LP_242.jpg" alt="" class="nav_blog navanime">
+    </a>
+  </div>
+
+
+  <!-- メインビジュアル -->
+  <section class="mainvisual" id="mainvisual">
+    <div class="main_image">
+    </div>
+    <div class="covid">
+      <a href="./covid.html" target="_blank">
+        <p>北関東学院は全力で<br>
+          コロナ対策に取り組んでいます</p>
+          <br>
+        <span>-対策の詳しい内容-</span>
+      </a>
+    </div>
+    <div class="bunner">
+      <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html"
+        target="_blank">
+        <img src="./img/mainvisual/kyushhoku-bunner.jpg" alt="">
+      </a>
+      <p>
+        交通費についても支給
+      </p>
+      <p>
+        ※いずれも需給条件を満たした方のみとなります。
+      </p>
+    </div>
+  </section>
+
+  <!-- コース情報 -->
+  <section class="curse" id="curse">
+    <img src="./img/course/curse_title.png" alt="" class="curse_title">
+    <div class="couse_switch">
+      <img src="./img/course/design.png" alt="" onclick="onClickButton()" id="couse_button" class="switch1 switch_active">
+      <img src="./img/course/paso.png" alt="" onclick="onClickButton2()" id="couse_button2" class="switch2">
+      <img src="./img/course/prog.png" alt="" onclick="onClickButton3()" id="couse_button3" class="switch3">
+    </div>
+    <div class="curse_box curse_box_anime">
+      <div class="curse_guidance">
+        <ul class="curse_slide">
+          <li><img src="./img/course/design.jpg" alt=""></li>
+          <li><img src="./img/course/design2.jpg" alt=""></li>
+          <li><img src="./img/course/design3.jpg" alt=""></li>
+        </ul>
+      </div>
+      <div class="curse_guidance2">
+        <ul class="curse_slide2">
+          <li><img src="./img/course/basic.jpg" alt=""></li>
+          <li><img src="./img/course/basic2.jpg" alt=""></li>
+          <li><img src="./img/course/basic3.jpg" alt=""></li>
+        </ul>
+      </div>
+      <div class="curse_guidance3">
+        <ul class="curse_slide3">
+          <li><img src="./img/course/prog.jpg" alt=""></li>
+          <li><img src="./img/course/prog2.jpg" alt=""></li>
+          <li><img src="./img/course/prog3.jpg" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ここから下が新着 -->
+    <div id="news" class="m_left50 m_bottom15 cf">
+      <h2>新着情報・開講コース情報</h2>
+      <dl class="cf">
+        <dt>10月26日より募集開始</dt>
+        <dd class="news__course-name">
+          12月開講WEBデザインクリエーター科<br />
+          <a href="./img/course/web_2023_12.pdf" target="_blank">詳しい資料はこちら</a>
+        </dd>
+        <hr />
+        <dd>11月開講WEBデザインクリエーター科</dd>
+        <dd class="pdl_20">受付終了</dd>
+        <hr />
+        <dd>11月開講WEBプログラミングデザイン科</dd>
+        <dd class="pdl_20">受付終了</dd>
+        <hr />
+        <dd>10月開講WEBデザインクリエーター科</dd>
+        <dd class="pdl_20">受付終了</dd>
+        <hr />
+        <dd>9月開講WEBデザインクリエーター科</dd>
+        <dd class="pdl_20">受付終了</dd>
+        <hr />
+        <dd>8月開講WEBフロントエンド構築科</dd>
+        <dd class="pdl_20">受付終了</dd>
+        <hr />
+        <dd>8月開講WEBデザインクリエーター科</dd>
+        <dd class="pdl_20">受付終了</dd>
+        <hr />
+      </dl>
+    </div>
+    <!-- ここまでが新着 -->
+  </section>
+
+  <!-- 修了生の声 -->
+  <section class="review" id="review">
+    <img src="./img/review/review.png" alt="" class="review_title">
+    <div class="review_box">
+      <div class="reviewer_box">
+        <div class="reviewer reviewer_switch1" onclick="reviewbtn1()">
+          <img src="./img/review/voice_02.jpg" alt="" class="reviewer_img">
+          <img src="./img/review/huki.png" alt="" class="reviewer_huki">
+          <p>
+            20代女性<br>
+            WEBデザインコース修了
+          </p>
+        </div>
+        <div class="reviewer reviewer_switch2" onclick="reviewbtn2()">
+          <img src="./img/review/voice_01.jpg" alt="" class="reviewer_img">
+          <img src="./img/review/huki.png" alt="" class="reviewer_huki">
+          <p>
+            30代男性<br>
+            WEBデザインコース修了
+          </p>
+        </div>
+        <div class="reviewer reviewer_switch3" onclick="reviewbtn3()">
+          <img src="./img/review/voice_03.jpg" alt="" class="reviewer_img">
+          <img src="./img/review/huki.png" alt="" class="reviewer_huki">
+          <p>
+            30代女性<br>
+            基礎コース修了
+          </p>
+        </div>
+      </div>
+      <div class="review_textbox">
+        <div class="review_text1">
+          <p>まったくの初心者だったので、Photoshopやillustratorが使いこなせるか</p>
+          <p>不安でしたが、勉強したことをすぐに次の課題で復習できるように工夫されて</p>
+          <p>いたのでどんどん覚えることができました。またどこかわからないところ</p>
+          <p>でつまずいてもわかるまで丁寧に説明してくれたり、授業では習っていないけれど</p>
+          <p>「こんなことがやってみたい」という要望にも親切に応えてくれました。<br><br></p>
+          <p>HTMLやCSSについてはデザインよりも苦手意識が強かったのですが、ひとつ</p>
+          <p>ひとつのタグやプロパティの意味を覚えて組み立てていき、最終的には初心者</p>
+          <p>だった私でも自分の思い描いていたようなWEBサイトを作れるようになったとき</p>
+          <span>
+            は感動しました！
+          </span>
+        </div>
+        <div class="review_text2">
+          <p>勉強すること自体嫌いではなかったんですが</p>
+          <p>目標をもって勉強することがこんなにやりがいが</p>
+          <p>あるなんて驚きでした。</p>
+          <p>就職に結びつけることもでき自分にとって</p>
+          <p>いいターニングポイントになりました。</p>
+        </div>
+        <div class="review_text3">
+          <p>子育ても落ち着き、いざ仕事を探してみようとしたら・・・</p>
+          <p>パソコンスキルのない私には厳しい現実が待っていました。</p>
+          <p>今やパソコンの１つも使えないとできる仕事が少ないのです！</p>
+          <p>そこで自分に自信をつけ、スキルアップするために受講する</p>
+          <p>ことを決めました。</p>
+          <p>パソコンには触ったことあるけど全くの苦手でした。</p>
+          <p>でも初歩的なことでも丁寧に教えてもらうことができ、</p>
+          <p>ゆっくりではありますがExcelやWordといったソフトにも</p>
+          <p>慣れていきました。<br><br></p>
+          <p>現在は希望していた事務職に就くことができ、訓練で学んだ</p>
+          <p>ことを思い出しながら何とか頑張っています。</p> 
+          <p>訓練に通ったことで、自分の人生がこれからも</p>
+          <p>充実していくのだと実感しています！</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- スタッフ -->
+  <section class="teacher" id="teacher">
+    <img src="./img/teacher/staff.png" alt="" class="teacher_title">
+    <div id="teacher" class="cf">
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/mori02.jpg" alt="森政之" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>森</dd>
+          <dt>担当科目：</dt>
+          <dd>WEBデザイン<br />パソコン基礎<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/matsumura02.jpg" alt="松村豪" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>松村</dd>
+          <dt>担当科目：</dt>
+          <dd>WEBデザイン<br />パソコン基礎<br />プログラミング</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/ogawa_k.jpg" alt="小川弘二" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>小川</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/ishida.jpg" alt="石田和也" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>石田</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/kanai.jpg" alt="金井佑樹" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>金井</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />プログラミング</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/hyodo.jpg" alt="兵藤勇気" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>兵藤</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/kato.jpg" alt="加藤浩司" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>加藤</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/kudo02.jpg" alt="工藤悠" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>工藤</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/kamiyama.jpg" alt="神山祐也" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>神山</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/tanaka_c.jpg" alt="田中知歩" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>田中</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/tsuda.jpg" alt="津田直子" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>津田</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/ogawa.jpg" alt="小川将" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>小川</dd>
+          <dt>担当科目：</dt>
+          <dd>パソコン基礎<br />WEBデザイン<br />　</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/ishimaru.jpg" alt="石丸卓嗣" /></div>
+        <dl>
+          <dt>講師名：</dt>
+          <dd>石丸</dd>
+          <dt>担当科目：</dt>
+          <dd>WEBデザイン<br />パソコン基礎<br />プログラミング</dd>
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/yamada.jpg" alt="山田由紀子" /></div>
+        <dl>
+          <dt>事務員：</dt>
+          <dd>山田</dd>
+          <!-- <dt>担当：事務員</dt> -->
+        </dl>
+      </div>
+      <div class="man m_left50 m_bottom15 cf">
+        <div><img src="img/teacher/kawamura.jpg" alt="川村敏憲" /></div>
+        <dl>
+          <dt>事務員：</dt>
+          <dd>川村</dd>
+          <dd>担当：就職支援</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- お申込み手順 -->
+  <section class="procedure" id="procedure">
+    <img src="./img/procedure/procedure.png" alt="" class="procedure_title">
+    <div class="procedure_box">
+      <img src="./img/procedure/procedure2.png" alt="">
+    </div>
+    <img src="./img/procedure/procedure4.png" alt="" class="procedure_tel">
+  </section>
+
+  <!-- アクセス フッター -->
+  <section class="access" id="access">
+    <div class="access_box">
+      <img src="./img/access_footer/access.png" alt="">
+      <div class="access_text_box">
+        <a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-sapporo.html"
+          target="_blank">ハローワーク札幌</a>
+        <a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-kita.html"
+          target="_blank">ハローワーク札幌北</a>
+        <a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-higashi2.html"
+          target="_blank">ハローワーク札幌東</a>
+        <a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-plaza.html"
+          target="_blank">ハローワークプラザ</a>
+      </div>
+    </div>
+    <img src="./img/access_footer/foot_logo3.png" alt="" class="access_bunner">
+  </section>
+
+  <!-- js -->
+  <script>
+    // 共通
+    const logoanime = () => {
+      let scroll = $(window).scrollTop();
+      let windowHeight = $(window).height();
+      let targetarea = $(".couse_switch").offset().top;
+      console.log(scroll);
+      console.log(windowHeight);
+      console.log(targetarea);
+      $('.logo').each(function () {
+        if (scroll >= targetarea - windowHeight) {
+          $(this).removeClass('logo_anime2');
+          $(this).removeClass('logo_anime3');
+          $(this).addClass('logo_anime');
+        } else if (scroll <= targetarea - windowHeight) {
+          $(this).removeClass('logo_anime');
+          $(this).addClass('logo_anime2');
+        }
+      });
+    }
+    $(window).scroll(function () {
+      logoanime();
+    });
+  </script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    // コース情報
+    $('.curse_slide').slick({
+      autoplay: false, // 自動再生
+      autoplaySpeed: 2000,
+      fade: true, // スライドをフェードイン・フェードアウト
+      cssEase: 'linear',// アニメーション
+      speed: 600, // フェードアニメーションの速度設定
+      arrows: true, // 矢印
+      dots: true, // インジケーター
+    });
+
+    $('.curse_slide2').slick({
+      autoplay: false, // 自動再生
+      autoplaySpeed: 2000,
+      fade: true, // スライドをフェードイン・フェードアウト
+      cssEase: 'linear',// アニメーション
+      speed: 600, // フェードアニメーションの速度設定
+      arrows: true, // 矢印
+      dots: true, // インジケーター
+    });
+
+    $('.curse_slide3').slick({
+      autoplay: false, // 自動再生
+      autoplaySpeed: 2000,
+      fade: true, // スライドをフェードイン・フェードアウト
+      cssEase: 'linear',// アニメーション
+      speed: 600, // フェードアニメーションの速度設定
+      arrows: true, // 矢印
+      dots: true, // インジケーター
+    });
+  </script>
+
+</body>
+
+</html>
