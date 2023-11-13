@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北関東学院</title>
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- favicon -->
+  <link rel="shortcut icon" href="./img/favicon.png">
+</head>
+
+<body>
+
+    <!-- ローディング -->
+    <div class="loading" id="loading">
+        <div class="spinner"><img src="./img/logo.png" alt=""></div>
+    </div>
+
+    <!-- 修正 グローバルナビ追加 -->
+    <!-- global nav -->
+    <div class="global logo_anime3">
+        <img src="./img/nav/nav_logo.png" alt="" onclick="navbtn()">
+        <nav class="global_nav">
+            <ul>
+                <li><a href="">TOP</a></li>
+                <li><a href="#course">コース情報</a></li>
+                <li><a href="#info">新着情報</a></li>
+                <li><a href="#review">修了生の声</a></li>
+                <li><a href="#procedure">お申込み手順</a></li>
+                <li><a href="#otoiawase">アクセス・お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- header -->
+    <header>
+        <nav class="navigation">
+            <nav class="hmozi">
+                <a href=""><img src="./img/foot_logo.png" alt="" class="headerimg"></a>
+                <ul class="botan">
+                    <!-- 修正 class名付与 -->
+                    <ul class="botan2">
+                        <li class="nav_title"><a href="">コースについて</a>
+                            <ul class="course">
+                                <li><a href="./course/dezain.html">WEBデザインクリエーター科</a></li>
+                                <li><a href="./course/huronto.html">WEBフロントエンド構築科</a></li>
+                                <li><a href="./course/puroguramu.html">WEBプログラミングデザイン科</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <li class="nav_title"><a href="./よくある質問/situmon.html">よくある質問</a></li>
+                    <li class="nav_title" s><a href="#otoiawase">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </nav>
+
+        <nav>
+            <nav class="maingazou koko">
+                <nav class="gurade"></nav>
+            </nav>
+            <!-- 修正 アニメーション追加のため、class名spanタグ追加 -->
+            <nav class="dream">
+                <h1><span>夢</span><span>を</span><br><span>仕</span><span>事</span><span>に</span><span>。</span></h1>
+            </nav>
+            <!-- 修正 就職率の数字のソース等がないので一旦非表示 -->
+            <!-- <nav class="syuusyokuritu"></nav> -->
+        </nav>
+    </header>
+
+
+    <!-- main -->
+
+
+    <!-- 悩み -->
+    <main>
+        <section>
+            <div class="daimei">
+                <h2>こんな悩みをお持ちではありませんか？</h2>
+            </div>
+            <div class="nayami">
+                <div class="nayamimozi">
+                    <ul>
+                        <li>今までパソコンを使った仕事に就いた事がない</li>
+                        <li>独学で勉強してみたが、挫折してしまった</li>
+                        <li>簡単には使えるが、専門的な知識が知りたい</li>
+                        <li>前職からのブランクが空いてしまっている</li>
+                    </ul>
+                    <p>などなど・・・</p>
+                </div>
+                <div class="irasuto">
+                    <!-- <img src="./img/nayamu.png" alt="悩む" class="nayamu"> -->
+                    <!-- <img src="./img/kaiketu.png" alt="解決" class="wakaru"> -->
+                </div>
+            </div>
+
+            <div class="kaiketu">
+                <h2>その悩み、本校でパソコンのスキルアップを<br>
+                    目指しながら、解消しませんか？</h2>
+            </div>
+        </section>
+
+        <!-- 三つのコース -->
+        <section  id="course">
+            <div class="daimei">
+                <h2>あなたの ”なりたい” に応じて選べる３つのコース</h2>
+            </div>
+            <div class="mittu">
+                <a href="./コース/dezain.html">
+                    <div class="hako deza">
+                        <img src="./img/course/design.png" alt="">
+                        <p>WEBデザインコース</p>
+                    </div>
+                </a>
+                <a href="./コース/puroguramu.html">
+                    <div class="hako puro">
+                        <img src="./img/course/prog.png" alt="">
+                        <p>ITプログラミングコース</p>
+                    </div>
+                </a>
+                <a href="./コース/huronto.html">
+                    <div class="hako huro">
+                        <img src="./img/course/basic.png" alt="">
+                        <p>パソコン基礎コース</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- 新着情報 -->
+        <section  id="info">
+            <div class="daimei">
+                <h2>新着情報</h2>
+            </div>
+
+            <dl>
+                <dt class="line">2023.10.27<div class="korona">重要</div>
+                </dt>
+                <!-- 修正 コロナ対策ページ追加 -->
+                <dd class="koronamozi"><a href="./covid/covid.html" target="_blank">新型コロナウイルスへの対応について <img src="./img/link.png" alt="link"></a></dd>
+                <dt class="line">2023.10.26<div class="deza">デザイン</div>
+                </dt>
+                <!-- 修正 「募集中」と「こちら」の色が似ているのでリンクの部分とそうでない部分が分かりにくかったのでfontcolorを変更 -->
+                <dd>12月開講 WEBデザインクリエーター科 <span style="color: blue;">募集中</span> 詳しくは
+                    <!-- 修正 リンクを別タブで開くよう変更(あくまでも添付資料なのでページ移動しなくてもよいかと思いました。ファイルアイコン追加しました。) -->
+                    <a href="http://www.kitakanto-gakuin.net/flyer/web_2023_12.pdf" target="blank">こちら<img src="./img/info/images.png" alt="" class="imageicon"></a>
+                </dd>
+                <dt>2023.10.20<div class="puro">プログラミング</div>
+                </dt>
+                <dd>11月開講 WEBプログラミングデザイン科 <span style="color:rgb(255, 106, 106);">受付終了</span></dd>
+                <dt>2023.8.10<div class="huro">フロント</div>
+                </dt>
+                <dd>8月開講 WEBフロントエンド構築科 <span style="color:rgb(255, 106, 106);">受付終了</span></dd>
+            </dl>
+        </section>
+
+
+        <!-- 修了生 -->
+
+        <section id="review">
+            <div class="daimei">
+                <h2>修了生の声</h2>
+            </div>
+
+            <div class="syuuryousei">
+
+                <div class="hito">
+                    <img src="./img/onna.png" alt="女" class="hitogazou">
+
+                    <div class="hitomozi">
+                        <h2>初心者の私でも、WEBサイトが作れました！</h2>
+
+                        <p>まったくの初心者だったので、Photoshopやillustratorが使いこなせるか
+                            不安でしたが、勉強したことをすぐに次の課題で復習できるように工夫され
+                            ていたので、どんどん覚えることができました。</p>
+                        <p>HTMLやCSSについてはデザインよりも苦手意識が強かったのですが、ひとつ
+                            ひとつのタグやプロパティの意味を覚えて組み立てていき、最終的には初心者
+                            だった私でも自分の思い描いていたようなWEBサイトを作れるようになった時は
+                            感動しました！</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="syuuryousei">
+
+                <div class="hito">
+
+                    <div class="hitomozi">
+                        <h2>勉強のやりがいを感じられました</h2>
+
+                        <p>勉強すること自体は嫌いではないかったんですが、目標をもって勉強をすることが
+                            こんなにやりがいがあるなんて驚きでした。
+                            就職に結びつけることもでき、自分にとっていいターニングポイントになりました。
+                        </p>
+                    </div>
+
+                    <img src="./img/otoko.png" alt="男" class="hitogazou">
+
+                </div>
+            </div>
+
+            </div>
+
+
+            <!-- 隠す -->
+
+        </section>
+
+
+        <!-- 申し込み -->
+
+        <section id="procedure">
+            <div class="daimei">
+                <h2>お申込み手順</h2>
+            </div>
+
+            <div class="uketuke">
+                <ol>
+                    <li>
+                        <!-- 修正 class名付与 -->
+                        <h2 class="risuto listbtn">ハローワークにて求職申込、説明を聞く</h2>
+                        <!-- 修正 class名付与 -->
+                        <div class="mousikomi none mousikomiopen">
+                            <div class="mousikomi2">
+                                <p>お近くのハローワークにて求職申込を行い、求職者支援制度の説明を受けてください。</p>
+                                <p>※職業訓練受講給付金の受給を希望する場合は、その旨を担当者にお申し出ください。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 修正 class名付与 -->
+                        <h2 class="risuto listbtn2">訓練コースの選択</h2>
+                        <!-- 修正 class名付与 -->
+                        <div class="mousikomi none mousikomiopen2">
+                            <div class="mousikomi2">
+                                <p>ハローワークで職業相談を受けつつ、受講したい訓練を選択します。</p>
+                                <p>受講申込書などの必要書類を受け取ってください。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 修正 class名付与 -->
+                        <h2 class="risuto listbtn3">訓練受講の申込</h2>
+                        <!-- 修正 class名付与 -->
+                        <div class="mousikomi none mousikomiopen3">
+                            <div class="mousikomi2">
+                                <p>ハローワークで受講申込の手続きを行います。受講申込書に受付印を押してもらったら、郵送か持参で
+                                    当校まで提出してください。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 修正 class名付与 -->
+                        <h2 class="risuto listbtn4">選考会</h2>
+                        <!-- 修正 class名付与 -->
+                        <div class="mousikomi none mousikomiopen4">
+                            <div class="mousikomi2">
+                                <p>指定された日時に当校にて筆記試験と面接を行います。</p>
+                                <p>当日は筆記用具をご持参ください。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 修正 class名付与 -->
+                        <h2 class="risuto listbtn5">合否通知</h2>
+                        <!-- 修正 class名付与 -->
+                        <div class="mousikomi none mousikomiopen5">
+                            <div class="mousikomi2">
+                                <p>「合格」の通知が届いたら「選考結果通知書」をハローワークに提出し、「就職支援計画書」を受け取ってください。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 修正 class名付与 -->
+                        <h2 class="risuto listbtn6">受講開始</h2>
+                        <!-- 修正 class名付与 -->
+                        <div class="mousikomi none mousikomiopen6">
+                            <div class="mousikomi2">
+                                <p>訓練開始です！今日から一緒に頑張りましょう！</p>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+
+        <!-- アクセス -->
+
+        <section id="otoiawase">
+            <div class="daimei">
+                <h2>アクセス・お問い合わせ</h2>
+            </div>
+
+            <div class="akusesu">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.6351580817163!2d141.35294217584757!3d43.04910729129241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a27ee23ea55%3A0xdedc877edeaf642!2z5YyX6Zai5p2x5a2m6Zmi!5e0!3m2!1sja!2sjp!4v1698624388860!5m2!1sja!2sjp"
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="setumei">
+                    <div class="tizu">
+                        <p><span style="color: rgb(105, 105, 105);">●</span>地下鉄南北線 <br>中島公園駅から徒歩１分</p>
+                        <p><span style="color: rgb(105, 105, 105);">●</span>地下鉄東豊線 <br>豊水すすきの駅から徒歩１０分</p>
+                    </div>
+                    <div>
+                        <p>株式会社 環境デザイン</p>
+                        <p>北関東学院</p>
+                        <a href="tel:011-232-5508">011-232-5508</a>
+                        <h6>※電話番号をタップすると直接電話が掛かります</h6>
+                        <p>担当：平田・一戸</p>
+                        <p>( 9:00 ～ 18:00 )</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topic">
+                <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html"
+                    target="_blank">
+                    <img src="./img//kyuusyoku.png" alt="" class="bene">
+                </a>
+                <a href="https://ameblo.jp/kps-sapporo/" target="_blank">
+                    <img src="./img/access/LP_242.jpg" alt="" class="blog">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <nav class="footer">
+            <nav class="hidari">
+                <nav class="kitakanto"><img src="./img/foot_logo.png" alt=""></nav>
+                <!-- 修正 給付金のバナーが小さい気がしたので移動して拡大 -->
+                <!-- <nav><a class="okane"
+                        href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html"
+                        target="_blank"><img src="./img/kyuusyoku.png" alt=""></a></nav> -->
+            </nav>
+            <nav class="harowa">
+                <ul>
+                    <li><a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-sapporo.html"
+                            target=_blank>ハローワーク札幌</a></li>
+                    <li><a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-kita.html"
+                            target=_blank>ハローワーク札幌北</a></li>
+                    <li><a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-higashi2.html"
+                            target=_blank>ハローワーク札幌東</a></li>
+                    <li><a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-plaza.html"
+                            target=_blank>ハローワークプラザ</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

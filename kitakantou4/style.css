@@ -1,0 +1,866 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,
+li,
+dd,
+dt,
+dl dd a,
+.setumei a,
+h6 {
+    font-family: "Sawarabi Gothic";
+    color: rgb(48, 48, 48);
+    font-weight: normal;
+}
+
+a,
+h2 {
+    font-family: "M PLUS 1p";
+    color: rgb(48, 48, 48);
+}
+
+p,
+a,
+h2,
+li {
+    line-height: 2;
+}
+
+
+/* ヘッダー */
+
+.navigation {
+    height: 10vh;
+    background: rgb(56, 89, 170);
+}
+
+.hmozi {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* 修正 ロゴにマージン設定*/
+.hmozi img {
+    margin-top: 5px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    list-style-type: none;
+    margin-left: 140px;
+}
+
+/* 修正 フォントサイズ変更 */
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* メニュー */
+
+
+/* メイン写真 */
+.maingazou {
+    width: 100%;
+    height: 670px;
+    position: relative;
+    background-image: url(./img/top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gurade {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(47, 47, 47, 0.7), rgba(255, 255, 255, 0));
+}
+
+nav h1 {
+    font-size: 100px;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    color: white;
+}
+
+.syuusyokuritu {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 80px;
+    right: 100px;
+}
+
+/* 修正 アニメーション追加 */
+.dream span {
+    opacity: 0;
+    animation: dreamanime 1s forwards;
+    animation-delay: 4s;
+    
+}
+
+@keyframes dreamanime {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.dream span:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.dream span:nth-child(3) {
+    animation-delay: 4.5s;
+}
+
+.dream span:nth-child(4) {
+    animation-delay: 5s;
+}
+
+.dream span:nth-child(5) {
+    animation-delay: 5s;
+}
+
+/* メイン */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    margin: 5em 0;
+}
+
+.daimei h2 {
+    padding-left: 20px;
+    border-left: 10px solid rgb(234, 193, 150);
+    margin-bottom: 3rem;
+}
+
+/* 修正 margin-bottom追加 */
+#otoiawase {
+    padding-top: 60px;
+    margin-top: -60px;
+    margin-bottom: 40px;
+}
+
+
+/* 悩みはありませんか */
+
+.nayami {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nayamimozi ul {
+    margin: 20px 90px 10px;
+}
+
+.nayamimozi li {
+    font-size: 24px;
+}
+
+.nayamimozi p {
+    margin-left: 500px;
+}
+
+
+.kaiketu {
+    margin: 0 auto;
+}
+
+.kaiketu h2 {
+    color: rgb(255, 182, 104);
+    font-size: 24px;
+    margin: 40px;
+    text-align: center;
+}
+
+/* 画像変わる */
+
+/* .nayamu,.wakaru {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
+
+.wakaru,.nayanda {
+    display: none;
+}
+
+.wakatta,.nayamu {
+    display: block;
+}
+
+.irasuto {
+    width: 250px;
+    height: 250px;
+} */
+
+.irasuto {
+    width: 250px;
+    height: 250px;
+    background-image: url(./img/nayamu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition-duration: .5s;
+}
+
+.wakatta {
+    background-image: url(./img/kaiketu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition-duration: .5s;
+}
+
+
+/* みっつのコース */
+
+/* 修正  flexbox化や線の角丸く*/
+.hako {
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* 修正 選択してるものにアニメーション追加 */
+.hako:hover {
+    animation: couseanime 0.5s forwards;
+}
+
+@keyframes couseanime {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+/* 修正 追記*/
+.hako p {
+    margin-top: 50px;
+    background-color: orange;
+    width: 230px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+/* 修正 追記*/
+.hako img {
+    margin-top: 50px;
+    width: 240px;
+}
+
+.mittu {
+    display: flex;
+    justify-content: center;
+}
+
+/* 修正 アニメーション追加に伴ってmargin調整 */
+.mittu a:nth-child(2) {
+    margin: 0 80px;
+}
+
+/* 修正 追記 */
+.mittu a {
+    text-decoration: none;
+}
+
+
+/* ニュースのとこ */
+
+dl dt {
+    float: left;
+    padding: 20px 5px;
+}
+
+
+dl dd {
+    border-bottom: 1px solid #ccc;
+    /* margin-left:100px; */
+    padding: 20px 5px;
+}
+
+/* aタグ追加でずれる 調整 */
+.line {
+    margin-top: 6px;
+}
+
+
+dl div {
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: inline;
+}
+
+dl dd a {
+    text-decoration: none;
+    color: rgb(129, 178, 221);
+}
+/* 修正 リンク部分が色変わるように変更 */
+dl dd a:hover {
+    color:  rgb(249, 95, 252);
+}
+
+
+.koronamozi a {
+    color: rgb(48, 48, 48);
+}
+
+.material-icons {
+    display: inline-block;
+}
+
+.korona {
+    background: rgb(255, 106, 106);
+}
+
+.deza {
+    background: rgb(162, 195, 224);
+}
+
+/* 修正 似ている色が3つ並ぶので色変更 */
+.puro {
+    background: rgb(255, 226, 183);
+}
+
+.huro {
+    background: rgb(196, 226, 206);
+}
+
+.imageicon {
+    width: 18px;
+    margin-left: 5px;
+}
+
+
+/* 修了生の声 */
+
+.syuuryousei {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.hitogazou {
+    height: 200px;
+}
+
+.hitomozi h2 {
+    border-bottom: 2px solid rgb(234, 193, 150);
+    align-items: center;
+}
+
+.hito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hitomozi {
+    width: 70%;
+}
+
+.hito p {
+    margin: 20px 0;
+}
+
+
+/* 受付の流れ */
+
+.uketuke li {
+    margin: 20px 0;
+}
+
+.uketuke li h2 {
+    border-bottom: 5px solid rgb(234, 193, 150);
+}
+
+.uketuke li h2:hover {
+    color: red;
+}
+
+
+.risuto {
+    cursor: pointer;
+    display: flex;
+}
+
+.mousikomi {
+    background: rgba(234, 193, 150, .3);
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+    height: 10vh;
+}
+
+.none {
+    display: none;
+}
+
+.detekuru {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mousikomi2 {
+    margin-left: 2rem;
+}
+
+/* 流れ〇のとこ */
+.uketuke ol {
+    counter-reset: num;
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.uketuke ol li {
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.5em;
+    padding: 0 0.5em 0.5em 30px;
+}
+
+.uketuke ol li:before {
+    position: absolute;
+    counter-increment: num;
+    content: counter(num);
+    display: inline-block;
+    background: rgb(255, 182, 104);
+    color: #FFF;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 50%;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    top: 12px;
+}
+
+
+/* map */
+
+/* 修正 箱の領域が立てに広かったのでpadding調整 */
+.map {
+    position: relative;
+    width: 65%;
+    height: 0;
+    padding-top: 40%;
+}
+
+/* 修正 上記に伴ってheight調整 */
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.setumei {
+    width: 30%;
+    height: 450px;
+    background: rgba(234, 193, 150, .3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* 修正 文字サイズ大きくは電話番号は色変わるように変更*/
+.setumei p,.setumei a {
+    font-size: 20px;
+}
+
+.setumei a:hover {
+    color:red;
+}
+
+.setumei h6 {
+    font-size: 14px;
+}
+
+
+.tizu {
+    margin-bottom: 20px;
+}
+
+.tizu p {
+    margin-bottom: 10px;
+}
+
+
+.akusesu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.akusesu a {
+    text-decoration: none;
+}
+
+h6 {
+    line-height: 0;
+    margin-bottom: 10px;
+}
+
+/* 修正 topic追加 */
+.topic {
+    margin-top: 20px;
+    margin-left: 850px;
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(234, 193, 150, .3);
+}
+
+.bene {
+    width: 300px;
+    margin: 10px 0 0 25px;
+}
+
+.blog{
+    width: 350px;
+}
+
+
+
+
+/* footer */
+
+footer {
+    background: rgb(56, 89, 170);
+    height: 10vh;
+}
+
+footer nav img {
+    height: 45px;
+}
+
+.okane img {
+    height: 60px;
+}
+
+/* 修正 文字と画像を上下の中央に調整 */
+footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.hidari {
+    display: flex;
+    align-items: center;
+}
+
+/* .okane {
+    margin-left: 40px;
+} */
+
+.harowa ul {
+    display: flex;
+    list-style: none;
+}
+
+.harowa li {
+    margin-left: 30px;
+}
+
+/* 修正 文字の大きさ、太さmargin変更 */
+.harowa a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* 修正 選択されているものが分かりやすいようfontcolor変更 */
+.harowa a:hover {
+    color:  rgb(244, 252, 95);
+}
+
+/* 動きの指定 ナビゲーション */
+.course {
+    /* display: none; */
+    position: absolute;
+    /* margin-left: -6px; */
+    padding: 0;
+    display: none;
+    z-index: 2;
+    background: rgb(56, 89, 170);
+    width: 300px;
+    left: -60px;
+    top: 50px;
+}
+
+/* 修正 フォントサイズ(大元のほうを24pxにしたのでこちらに16px記載)*/
+.course li a {
+    padding: 5px;
+    margin-left: -120px;
+    /* margin-right: -5px; */
+    /* margin-bottom: -5px; */
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+    font-size: 16px;
+}
+
+/* 修正 position付与*/
+.botan {
+    position: relative;
+    height: 10vh;
+    align-items: center;
+}
+
+.botan li {
+    position: relative;
+}
+
+/* 修正 選択されているものが分かりやすいようfontcolor変更 */
+.botan a:hover {
+    color:  rgb(244, 252, 95);
+}
+
+
+/* 修正 追記*/
+.botan2 {
+    position: absolute;
+    top: 13px;
+    left: -280px;
+    height: 200px;
+}
+
+
+
+
+
+/* ローディング */
+/* 修正 ロゴを背景画像から画像に変更したのでflexbox化して中央にロゴ配置 */
+/* 細かい時間の調整等したいのでアニメーションに変更 */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    transition: all 2s;
+    background: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    animation: loadinganime 4s forwards;
+}
+
+@keyframes loadinganime {
+    0% {
+        opacity: 1;
+    }
+    
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* 修正 上記変更に伴って一部記述をコメントアウト */
+.spinner {
+    height: 100px;
+    width: 300px;
+    /* margin: 300px 600px; */
+    /* background-image: url(./img/logo.png); */
+    /* background-repeat: no-repeat; */
+}
+
+.spinner img {
+    width: 400px;
+}
+
+/* 修正 上記でアニメーションでの動きに変更したのでコメントアウト */
+/* .loaded {
+    opacity: 0;
+    visibility: hidden;
+} */
+
+
+
+/* スクロール ゆっくり */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 修正 グローバルナビゲーション及びアニメーション追加 */
+/* global nav */
+.global {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    /* width: 250px;
+    height: 360px; */
+
+    /* visibility: hidden; */
+}
+
+
+.global img {
+    width: 80px;
+    background-color: rgb(137, 128, 128);
+    border: 5px double black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.global_nav {
+    width: 250px;
+    height: 0px;
+    overflow-y: hidden;
+}
+
+.global ul {
+    background-color: rgba(56, 89, 170, 0.8);
+    padding: 10px 20px 20px 30px;
+    border-radius: 10px;
+    margin-left: 0px;
+}
+
+.global li {
+    list-style-type:none;
+}
+
+.global a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.global a:hover {
+    color:  rgb(244, 252, 95);
+}
+
+.global_active {
+    animation: globalanime 1s forwards;
+}
+
+@keyframes globalanime {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 250px;
+    }
+}
+
+.global_end {
+    animation: globalanime2 1s forwards;
+}
+
+@keyframes globalanime2 {
+    0% {
+        height: 250px;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+.logo_anime {
+    animation: logoanime 1s forwards;
+}
+
+@keyframes logoanime {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.logo_anime2 {
+    animation: logoanime2 1s forwards;
+}
+
+@keyframes logoanime2 {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.logo_anime3 {
+    animation: logoanime2 1s forwards;
+}
+
+@keyframes logoanime3 {
+    0% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
