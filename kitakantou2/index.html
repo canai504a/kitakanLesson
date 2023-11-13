@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北関東学院のホームページ</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <!-- mask -->
+    <div class="mask" id="mask"></div>
+    <header>
+        <section id="navigation">
+            <div class="topver">
+                <div class="img_logo">
+                    <a href="#top"><img src="./kitakan_img/logo.png" alt="logomark"></a>
+                </div>
+                <!-- ハンバーガーメニュー -->
+                <div class="openbtn" id="target">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- メニュー内部 -->
+
+            <nav>
+
+                <ul id="menu_list">
+                    <li><a href="#school">
+                            <h4>北関東学院について</h4>
+                        </a></li>
+                    <li>
+                        <a href="#kitakan">当校について</a>
+                    </li>
+                    <li><a href="#teacher" id="side_teacher">講師について</a></li>
+                    <li><a href="#teacher_staff" id="side_teacher_staff">講師・スタッフ紹介</a></li>
+                    <li><a href="#">
+                            <h4>コースについて</h4>
+                        </a></li>
+                    <li><a href="#course1">WEBプログラミングデザイン</a></li>
+                    <li><a href="#course2">WEBデザインクリエイター</a></li>
+                    <li><a href="#course3">WEBフロントエンド構築科</a></li>
+                </ul>
+            </nav>
+
+            <!-- サイドメニュー -->
+
+            <ul class="side_ul">
+                <li><a href="#school">北関東学院</a></li>
+                <li><a href="#course">コース</a></li>
+                <li><a href="#comment">修了生の声</a></li>
+                <li><a href="#other">その他情報</a></li>
+                <li><a href="#access">アクセス</a></li>
+            </ul>
+        </section>
+
+        <!-- メインビジュアル -->
+
+        <section id="top">
+            <div class="top_contentbox">
+                <img src="./kitakan_img/foot_logo.png" alt="main_view" id="main_view" class="main_view">
+
+                <span class="span_item01"></span>
+                <span class="span_item02"></span>
+                <span class="span_item03"></span>
+                <div class="back_item01"></div>
+                <div class="back_item02"></div>
+                <div class="back_item03"></div>
+            </div>
+        </section>
+    </header>
+
+    <!-- 北関東学院について -->
+
+    <main>
+        <section id="school">
+            <h2 class="backnumber01">北関東学院について</h2>
+            <div class="school_contentbox">
+                <div class="img_school">
+                    <img src="./kitakan_img/deskwork.jpg" alt="school_img">
+                </div>
+                <div class="school_p">
+                    <p>北関東学院はパソコン関連の仕事を目指す求職者支援訓練（職業訓練）です。<br>
+                        パソコンの初基礎から専門的なプログラムまで様々なコースがあります。<br>
+                        パソコンを使ったお仕事に苦手意識を持っている方や、<br>
+                        独学で勉強してみたけど挫折してしまった方は<br>
+                        ぜひ当訓練校でプログラムを学び、IT業界への一歩を踏み出してみませんか？</p>
+                </div>
+            </div>
+            <div class="btn_a">
+                <div class="surcle"></div>
+                <p class="btn_p">more</p>
+            </div>
+            <!-- moreクリックでアコーディオンメニュー -->
+            <div class="school_more">
+                <section id="kitakan">
+                    <div class="kitakan_content">
+                        <h2 class="backnumber01">当校について</h2>
+                        <p>北関東学院はパソコン関連の仕事を目指す求職者支援訓練（職業訓練）です。<br>
+                            パソコンを使ったお仕事に苦手意識を持っている方や、<br>
+                            独学で勉強してみたけど挫折してしまった方に向けて、<br>
+                            就職・技術面を全力でサポートします。
+                        </p>
+                    </div>
+                </section>
+
+                <section id="teacher">
+                    <h2 class="backnumber02">講師について</h2>
+
+                    <div>
+                        <h3>現役デザイナーが講師</h3>
+                        <p>授業は、現在もフリーランスでWEBデザイナーとして活躍している<br>
+                            講師の方々がデザインやプログラムの技術を教えてくれます。
+                        </p>
+                    </div>
+                    <div>
+                        <h3>モットーについて</h3>
+                        <p>丁寧にわかりやすく、わからないところを残さないよう基礎を<br>
+                            しっかり身に着けてもらうことを常に心掛けて授業しています。<br>
+                            もしわからないところがあってもわかるまで丁寧に教えるので、
+                            安心して授業を受けられます。
+                        </p>
+                    </div>
+
+                </section>
+
+                <!-- 講師・スタッフ -->
+
+                <section id="teacher_staff">
+                    <h2 class="backnumber03">講師・スタッフ紹介</h2>
+                    <div class="teacher_img">
+                        <img src="./kitakan_img/teacher's/mori02.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/matsumura02.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/ogawa_k.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/ishida.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/kanai.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/hyodo.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/kato.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/kudo02.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/kamiyama.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/tanaka_c.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/tsuda.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/ogawa.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/ishimaru.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/yamada.jpg" alt="teacher's">
+                        <img src="./kitakan_img/teacher's/kawamura.jpg" alt="teacher's">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- コースについて -->
+
+        <section id="course">
+            <h2 class="backnumber02">コースについて</h2>
+            <div>
+                <p>
+                    当訓練校では、あなたの"なりたい"に合わせて3つのコースが選べます。<br>
+                    自分のかなえたい未来に合わせてコースを選択しましょう。
+                </p>
+            </div>
+
+            <div class="course_contentbox" id="course1">
+                <div class="course_content">
+                    <div class="course_pbox01">
+                        <div class="course_p slide01">
+                            <h3>WEBプログラミングデザイン</h3>
+                            <p>ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course_content" id="course2">
+                    <div class="course_pbox02">
+                        <div class="course_p slide02">
+                            <h3>WEBデザインクリエイター</h3>
+                            <p>ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course_content" id="course3">
+                    <div class="course_pbox03">
+                        <div class="course_p slide03">
+                            <h3>WEBフロントエンド構築科</h3>
+                            <p>ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト
+                                ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a href="#" class="btn_a">
+                <div class="surcle"></div>
+                <p class="btn_p">more</p>
+            </a>
+
+        </section>
+
+        <!-- 修了生の声 -->
+
+        <section id="comment">
+            <h2 class="backnumber03">修了生の声</h2>
+
+            <div class="gradvoice">
+                <div class="gradvoice_content">
+                    <h5 class="gradvoice_h">20代女性</h5>
+                    <div class="gradvoice_box">
+                        <h6>初心者でも作れるようになった！</h6>
+                        <p>
+                            初心者だったので、Photoshopやillustratorが使いこなせるか不安でしたが、
+                            勉強したことを次の課題で復習できるよう工夫されていたのでどんどん
+                            覚えることができました。また、どこかわからないところでつまづいても
+                            わかるまで丁寧に説明してくれたり、授業では習っていないけど「こんなことがやってみたい」
+                            という要望にも親切に応えてくれました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gradvoice">
+                <div class="gradvoice_content">
+                    <h5 class="gradvoice_h h5_repeat">30代男性</h5>
+                    <div class="gradvoice_box radius_repeat">
+                        <h6 class="h6_repeat">初心者でも作れるようになった！</h6>
+                        <p>
+                            初心者だったので、Photoshopやillustratorが使いこなせるか不安でしたが、
+                            勉強したことを次の課題で復習できるよう工夫されていたのでどんどん
+                            覚えることができました。また、どこかわからないところでつまづいても
+                            わかるまで丁寧に説明してくれたり、授業では習っていないけど「こんなことがやってみたい」
+                            という要望にも親切に応えてくれました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gradvoice">
+                <div class="gradvoice_content">
+                    <h5 class="gradvoice_h">20代女性</h5>
+                    <div class="gradvoice_box">
+                        <h6>初心者でも作れるようになった！</h6>
+                        <p>
+                            初心者だったので、Photoshopやillustratorが使いこなせるか不安でしたが、
+                            勉強したことを次の課題で復習できるよう工夫されていたのでどんどん
+                            覚えることができました。また、どこかわからないところでつまづいても
+                            わかるまで丁寧に説明してくれたり、授業では習っていないけど「こんなことがやってみたい」
+                            という要望にも親切に応えてくれました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- その他情報 -->
+
+        <section id="other">
+            <h2 class="backnumber04">その他情報</h2>
+
+            <div class="othre_content">
+                <div class="otherbox other01">
+                    <a href="#">
+                        <h6>コロナ感染症対策</h6>
+                    </a>
+                </div>
+
+                <div class="otherbox other02">
+                    <a href="#">
+                        <h6>職業訓練受講給付金</h6>
+                    </a>
+                </div>
+
+                <div class="otherbox other03">
+                    <a href="#">
+                        <h6>お申し込み方法</h6>
+                    </a>
+                </div>
+
+                <div class="otherbox other04">
+                    <a href="https://ameblo.jp/kps-sapporo/">
+                        <h6>講師ブログはこちら</h6>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- アクセス -->
+        <section id="access">
+            <h2 class="backnumber05">アクセス</h2>
+            <div class="access_content">
+                <div class="access_text">
+                    <h2>北関東学院</h2>
+                    <p>〒064-0809<br>北海道札幌市中央区南９条西３丁目２−１０ 札幌KSビル 6F</p>
+                    <p>（ <span>緑の建物が目印です</span> ）</p>
+                    <p>地下鉄南北線中島公園駅目の前 徒歩１分</p>
+                    <p>TEL:011-232-5508</p>
+                </div>
+                <div class="access_streetview">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1699246871189!6m8!1m7!1sWCjdC7TnTX9T1VlDzNMjxA!2m2!1d43.04877101636651!2d141.3548409748592!3f66.47805521536733!4f8.738090511888856!5f0.7820865974627469"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.6351580817063!2d141.35294217568782!3d43.04910729129263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a27ee23ea55%3A0xdedc877edeaf642!2z5YyX6Zai5p2x5a2m6Zmi!5e0!3m2!1sja!2sjp!4v1699245769845!5m2!1sja!2sjp"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+    </main>
+
+    <!--  -->
+
+    <footer>
+        <div class="footer-copyright">
+            <p>&copy; 2023 北関東学院. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // メニュー
+        $('#target').click(() => {
+            $('.openbtn').toggleClass('menu_active');
+            $('.mask').toggleClass('mask_active');  //mask追加
+            $('nav').toggleClass('nav_active');
+        });
+
+        // 領域外クリックでメニュー画面を閉じる
+        $('#mask').click(() => {
+            $('.openbtn').toggleClass('menu_active');
+            $('.mask').toggleClass('mask_active');
+            $('nav').toggleClass('nav_active');
+        });
+
+        // メニューのリンクをクリックするとで閉じる
+        $('#menu_list').click(() => {
+            $('.openbtn').toggleClass('menu_active');
+            $('.mask').toggleClass('mask_active');
+            $('nav').toggleClass('nav_active');
+        });
+
+        // タイトルフェードイン
+
+        $('#main_view').on("load", () => {
+            $('.main_view').addClass('fadein_top');
+        });
+
+        // コース スライドイン
+
+        // content01
+        let duration = 400;
+        $(function () {
+            $('.course_pbox01').hover(slideIn01, slideOut01);
+        });
+        function slideIn01() {
+            $('.slide01').stop().animate({ top: "5%" }, duration);
+        };
+        function slideOut01() {
+            $('.slide01').stop().animate({ top: "50%" }, duration);
+        };
+        // content02
+        $(function () {
+            $('.course_pbox02').hover(slideIn02, slideOut02);
+        });
+        function slideIn02() {
+            $('.slide02').stop().animate({ top: "5%" }, duration);
+        };
+        function slideOut02() {
+            $('.slide02').stop().animate({ top: "50%" }, duration);
+        };
+        // content03
+        $(function () {
+            $('.course_pbox03').hover(slideIn03, slideOut03);
+        });
+        function slideIn03() {
+            $('.slide03').stop().animate({ top: "5%" }, duration);
+        };
+        function slideOut03() {
+            $('.slide03').stop().animate({ top: "50%" }, duration);
+        };
+
+        // ボタンアニメーション
+        $('.btn_a').hover(
+            function () {
+                $('.surcle').addClass('surcle_active');
+                $('.btn_p').addClass('btn_p_active');
+            },
+            function () {
+                $('.surcle').removeClass('surcle_active');
+                $('.btn_p').removeClass('btn_p_active');
+            }
+        );
+
+        // アコーディオンメニュー（school）
+        $(".btn_a").on("click", (event) => {
+            let value = $(event.currentTarget).next();
+            value.stop().slideToggle(1500);
+            $('school_more').removeClass('active')
+        })
+
+        // サイドメニューからアコーディオンメニューオーペン
+
+        document.querySelector('#target').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('.school_more').classList.add('active');
+        });
+
+        // 修了生の声フェードイン
+
+        $(window).on('scroll', function () {
+            let box = $('.gradvoice');  //boxに.gradvoiceクラスを入れる
+            let animated = 'fadein';    //animatedに付与するクラス名を入れる
+
+            box.each(function () {
+                let boxOffset = $(this).offset().top;   //各要素の上端からビューポートの上端までの距離（オフセット）を取得し
+                let scrollPos = $(window).scrollTop();  //現在のスクロール位置を取得しています。
+                let wh = $(window).height();
+
+                //要素がビューポートに到達したときにfadeinクラスを追加します。
+                if (scrollPos > boxOffset - wh + (-200)) {
+                    $(this).addClass('fadein');
+                    //要素がビューポートから離れた時にfadeinクラスを削除します。
+                } else {
+                    $(this).removeClass('fadein');
+                }
+            });
+        });
+        // other visivle
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.otherbox').forEach(element => {
+            observer.observe(element);
+        });
+
+
+        // ページ内リンクの際に画面上面より少し下げた位置に飛ぶぞ
+        document.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                let element = document.getElementById(this.getAttribute('href').slice(1));
+                window.scrollTo({
+                    top: element.offsetTop - 80, // 80px下にスクロール
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // mapとストリートビュー浮き上がり
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('iframe').forEach(iframe => {
+            observer.observe(iframe);
+        });
+
+        // test
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    var h2 = entry.target.querySelector('h2');
+                    if (h2) {
+                        h2.classList.add('slide-in');
+                    }
+                }
+            });
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+    </script>
+</body>
+
+</html>

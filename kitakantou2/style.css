@@ -1,0 +1,1101 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: bottom;
+
+}
+
+/* 共通パーツ */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff8ec;
+    line-height: 1.7;
+    letter-spacing: 0.1rem;
+}
+
+main {
+    width: 80%;
+    margin: 160px auto;
+    /* height: 500vh; */
+}
+
+section {
+    border-bottom: 1px solid #000;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    position: relative;
+    font-size: 4.8rem;
+    margin-top: 160px;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* header */
+
+.topver {
+    padding: 16px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+.img_logo {
+    width: 200px;
+}
+
+/* ------ハンバーガーメニュー------ */
+.openbtn {
+    background-color: gold;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.openbtn:hover {
+    border-radius: 50%;
+    animation-name: menupoint;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+@keyframes menupoint {
+    10% {
+        transform: scale(0.7);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* 三本線設定 */
+.topver span {
+    background-color: #fff8ec;
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s;
+}
+
+.topver span:nth-child(1) {
+    top: 18px;
+}
+
+.topver span:nth-child(2) {
+    top: 25px;
+}
+
+.topver span:nth-child(3) {
+    top: 32px;
+}
+
+/* ------メニュー押した後------ */
+
+.menu_active span:nth-child(1) {
+    width: 13px;
+    top: 37%;
+    left: 50%;
+    transform: rotate(45deg);
+}
+
+.menu_active span:nth-child(3) {
+    width: 13px;
+    top: 58%;
+    left: 50%;
+    transform: rotate(-45deg);
+}
+
+/* ----- mask ----- 領域外クリックでメニュー画面を閉じる */
+.mask {
+    display: none;
+}
+
+.mask_active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 65vw;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    z-index: 999;
+}
+
+/* ------メニュー画面------ */
+
+nav h4 {
+    margin: 12px 0;
+    text-align: left;
+    width: fit-content;
+}
+
+nav {
+    position: fixed;
+    width: 35vw;
+    height: 100vh;
+    background-color: gold;
+    right: 0;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: all 0.7s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 64px;
+    margin-left: 54px;
+}
+
+nav a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: darkblue;
+    bottom: 4px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+.nav_active {
+    transform: translateX(0);
+}
+
+/* ------ ハンバーガーメニュー終わり ------ */
+
+/* ------ サイドバー ------ */
+
+.side_ul {
+    position: fixed;
+    right: -10px;
+    height: 80vh;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.side_ul li {
+    list-style: none;
+    transform: rotate(90deg);
+    text-align: center;
+}
+
+.side_ul a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.side_ul a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: gold;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: all 0.3s;
+}
+
+.side_ul a:hover::before {
+    transform: scaleX(1);
+}
+
+/* ------ サイドバー終わり ------ */
+
+/* ------- メインビジュアル ------- */
+
+.top_contentbox {
+    width: 100%;
+    height: 100vh;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_contentbox img {
+    width: 40%;
+    position: relative;
+    bottom: 2%;
+    z-index: 10;
+}
+
+.top_contentbox span {
+    background-color: gold;
+    position: absolute;
+    z-index: 9;
+}
+
+/* フェードイン */
+
+.main_view {
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s;
+}
+
+.fadein_top,
+.random_fadein {
+    transform: rotateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 流体シェイプ */
+
+.span_item01 {
+    width: 150px;
+    height: 150px;
+    animation: fluid01 20s ease 0s infinite;
+
+    top: 55%;
+    left: 58%;
+}
+
+.back_item01 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle closest-side, #f5a02a 6px, transparent 5px) 40% 60% / 20px 20px;
+    animation: fluid01 20s ease 0s infinite;
+
+    top: 59%;
+    left: 62%;
+}
+
+@keyframes fluid01 {
+
+    0%,
+    100% {
+        border-radius: 150px 150px 150px 112px / 111px 150px 118px 150px;
+    }
+
+    14% {
+        border-radius: 294px 300px 274px 288px / 298px 251px 300px 209px;
+    }
+
+    28% {
+        border-radius: 300px 265px 300px 264px / 291px 271px 276px 239px;
+    }
+
+    42% {
+        border-radius: 184px 300px 207px 266px / 265px 252px 297px 300px;
+    }
+
+    56% {
+        border-radius: 300px 248px 300px 249px / 300px 228px 300px 272px;
+    }
+
+    70% {
+        border-radius: 291px 182px 249px 232px / 299px 173px 225px 173px;
+    }
+
+    84% {
+        border-radius: 250px 300px 201px 300px / 275px 299px 200px 298px;
+    }
+}
+
+.span_item02 {
+    width: 300px;
+    height: 300px;
+    animation: fluid02 25s ease 0s infinite;
+
+    top: 27%;
+    left: 25%;
+}
+
+.back_item02 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle closest-side, #f5a02a 6px, transparent 5px) 40% 60% / 20px 20px;
+    animation: fluid02 25s ease 0s infinite;
+
+    top: 20%;
+    left: 19%;
+}
+
+@keyframes fluid02 {
+
+    0%,
+    100% {
+        border-radius: 258px 300px 224px 247px / 284px 208px 276px 195px;
+    }
+
+    14% {
+        border-radius: 300px 259px 300px 259px / 300px 259px 300px 232px;
+    }
+
+    28% {
+        border-radius: 236px 287px 157px 300px / 244px 267px 203px 238px;
+    }
+
+    42% {
+        border-radius: 291px 182px 249px 232px / 299px 173px 225px 173px;
+    }
+
+    56% {
+        border-radius: 251px 298px 300px 281px / 300px 202px 277px 300px;
+    }
+
+    70% {
+        border-radius: 300px 129px 300px 223px / 221px 128px 300px 237px;
+    }
+
+    84% {
+        border-radius: 250px 300px 201px 300px / 275px 299px 200px 298px;
+    }
+}
+
+.span_item03 {
+    width: 200px;
+    height: 170px;
+    animation: fluid02 30s ease 0s infinite;
+
+    top: 17%;
+    left: 60%;
+}
+
+.back_item03 {
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    background: radial-gradient(circle closest-side, #f5a02a 6px, transparent 5px) 40% 60% / 20px 20px;
+    animation: fluid02 30s ease 0s infinite;
+
+    top: 13%;
+    left: 65%;
+}
+
+@keyframes fluid02 {
+
+    0%,
+    100% {
+        border-radius: 258px 300px 224px 247px / 284px 208px 276px 195px;
+    }
+
+    14% {
+        border-radius: 300px 259px 300px 259px / 300px 259px 300px 232px;
+    }
+
+    28% {
+        border-radius: 236px 287px 157px 300px / 244px 267px 203px 238px;
+    }
+
+    42% {
+        border-radius: 291px 182px 249px 232px / 299px 173px 225px 173px;
+    }
+
+    56% {
+        border-radius: 251px 298px 300px 281px / 300px 202px 277px 300px;
+    }
+
+    70% {
+        border-radius: 300px 129px 300px 223px / 221px 128px 300px 237px;
+    }
+
+    84% {
+        border-radius: 250px 300px 201px 300px / 275px 299px 200px 298px;
+    }
+}
+
+/* 流体シェイプ終わり */
+
+/* ------メインビジュアル終わり------ */
+
+/* ------北関東学院について------ */
+
+/* 後ろの文字 */
+.backnumber01::before {
+    position: absolute;
+    content: "#01";
+    font-size: 11.2rem;
+    opacity: 0.1;
+    left: 14%;
+    bottom: 0px;
+    transform: rotate(90deg);
+    color: darkblue;
+}
+
+.school_contentbox {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.img_school img {
+    position: absolute;
+    border-radius: 25px;
+    width: 50%;
+    left: 0%;
+    filter: sepia(50%);
+
+    min-width: 400px;
+}
+
+.school_more h2,
+.school_more h3,
+.school_more p {
+    color: #f5a02a;
+}
+
+.school_more section {
+    padding-bottom: 24px;
+}
+
+
+.school_p {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    background-color: gold;
+    border-radius: 271px 350px 293px 424px / 230px 232px 273px 251px;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0%;
+    bottom: 0;
+}
+
+/* ------ボタン------ */
+
+.btn_a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    height: 30px;
+    border: 1px solid darkblue;
+    border-radius: 20px;
+    text-align: right;
+    margin: 50px 0 50px auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn_p {
+    position: absolute;
+    transition: all .5s;
+    right: 8px;
+    z-index: 4;
+}
+
+.surcle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: gold;
+    border-radius: 50%;
+    right: 54px;
+    top: 5px;
+    z-index: 5;
+    transition: all .5s;
+}
+
+/*  */
+
+.surcle_active {
+    right: 7%;
+}
+
+.btn_a::after {
+    content: "";
+    position: absolute;
+    background-color: darkblue;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-200%);
+    transition: all .5s;
+}
+
+.btn_a:hover::after {
+    transform: translateX(-100%);
+}
+
+.btn_p_active {
+    color: #fff8ec;
+    right: 24px;
+}
+
+/* 別箇所も使いまわして適用 */
+
+/* 北関東学院についてオープン */
+.school_more {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+.teacher_img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teacher_img img {
+    max-width: 240px;
+}
+
+/* ------北関東学院について終わり------ */
+
+/* ------コースについて------ */
+
+.backnumber02::before {
+    position: absolute;
+    content: "#02";
+    font-size: 11.2rem;
+    opacity: 0.1;
+    left: 19%;
+    bottom: 0px;
+    transform: rotate(90deg);
+    color: darkblue;
+}
+
+.course_contentbox {
+    margin-top: 80px;
+    display: flex;
+}
+
+.course_content {
+    width: 100%;
+    /* 崩れやすいので消します */
+    /* min-width: 250px; */
+    height: 500px;
+    border: 1px solid #000;
+    margin: 40px 16px;
+    position: relative;
+}
+
+.course_content:nth-child(1) {
+    margin-left: 0;
+}
+
+.course_content:nth-child(3) {
+    margin-right: 0;
+}
+
+.course_pbox01,
+.course_pbox02,
+.course_pbox03 {
+    margin: 12px;
+    height: 80%;
+    clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%);
+}
+
+.course_p {
+    position: absolute;
+    top: 50%;
+    background-color: #f5a02a;
+}
+
+
+.course_p h3 {
+    margin: 40px 24px;
+    font-size: 2rem;
+}
+
+.course_p p {
+    margin: 24px;
+}
+
+/* ------コースについて終わり------ */
+
+/* ------修了生の声------ */
+
+.backnumber03::before {
+    position: absolute;
+    content: "#03";
+    font-size: 11.2rem;
+    opacity: 0.1;
+    left: 23%;
+    bottom: 0px;
+    transform: rotate(90deg);
+    color: darkblue;
+}
+
+.gradvoice_h {
+    margin: 0;
+    text-align: right;
+}
+
+.gradvoice_box h6 {
+    margin: 0;
+    padding: 12px;
+    text-align: left;
+}
+
+.gradvoice_box {
+    margin: 0 0 0 auto;
+    width: 80%;
+    padding: 20px;
+    background-color: #f5a02a;
+    border-radius: 50px 0 50px 50px;
+}
+
+.radius_repeat {
+    margin: 0 auto 0 0;
+}
+
+.radius_repeat {
+    border-radius: 0 50px 50px 50px;
+}
+
+.h5_repeat {
+    text-align: left;
+}
+
+.gradvoice_content {
+    margin: 24px 0;
+}
+
+.gradvoice {
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gradvoice.fadein {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* .gradvoice{
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fadein{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+} */
+/* ------修了生の声終わり------ */
+
+
+
+/* ------その他情報------ */
+
+.backnumber04::before {
+    position: absolute;
+    content: "#04";
+    font-size: 11.2rem;
+    opacity: 0.1;
+    left: 24%;
+    bottom: 0px;
+    transform: rotate(90deg);
+    color: darkblue;
+}
+
+.otherbox:hover,
+.otherbox a:hover {
+    filter: none;
+}
+
+.othre_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-evenly;
+}
+
+.otherbox {
+    width: 400px;
+    height: 300px;
+    margin: 40px;
+    border: 1px solid #000;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+}
+
+.otherbox a {
+    transition: all 0.3s;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    filter: sepia(85%);
+}
+
+.otherbox h6 {
+    color: #fff;
+    font-size: 2.4rem;
+    width: 100%;
+}
+
+/* 各コンテンツ */
+.other01 a {
+    background-image: url(./kitakan_img/meating.jpg);
+    background-size: 260%;
+    background-position: 23% 0;
+}
+
+.other02 a {
+    background-image: url(./kitakan_img/book.jpg);
+    background-size: 100%;
+    background-position: 0 10%;
+}
+
+.other03 a {
+    background-image: url(./kitakan_img/edit.jpg);
+    background-size: 100%;
+    background-position: 0 10%;
+}
+
+.other04 a {
+    background-image: url(./kitakan_img/study.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: 0 10%;
+}
+
+.otherbox {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.otherbox.visible {
+    opacity: 1;
+}
+
+/* ------ アクセス ------ */
+.backnumber05::before {
+    position: absolute;
+    content: "#05";
+    font-size: 11.2rem;
+    opacity: 0.1;
+    left: 25%;
+    bottom: 0px;
+    transform: rotate(90deg);
+    color: darkblue;
+}
+
+.access_content {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    flex-direction: row-reverse;
+}
+
+.access_text {
+    width: 45%;
+    height: 388px;
+    padding: 40px;
+    margin: auto 0;
+    background-color: gold;
+    border-radius: 271px 350px 293px 424px / 230px 232px 273px 251px;
+}
+
+.access_text h2 {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.access_text p {
+    text-align: left;
+    line-height: 2;
+
+}
+
+.access_text p span {
+    font-weight: bold;
+}
+
+.access_streetview {
+    width: 50%;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+
+
+iframe {
+    border-radius: 20px;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+iframe.visible {
+    opacity: 1;
+}
+
+/* ------ アクセス終わり ------ */
+/* ------ フッター ------ */
+
+.footer-copyright {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    height: 10vh;
+    color: #fff;
+
+}
+
+/* ------ フッター終わり ------ */
+
+
+/* test */
+.slide-in {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* 
+.sec_footer {
+    display: flex;
+    background-color: gold;
+    height: 70vh;
+}
+
+.sec_footer img {
+    margin: auto 24px;
+}
+
+.sec_footer h4 {
+    margin: 0;
+}
+
+.sec_footer li {
+    list-style: none;
+} */
+
+.fadein {
+    animation-name: fadeinanime;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeinanime {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* ここにスマートフォンサイズに適用するスタイルを書く */
+
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    /* ------メニュー画面------ */
+    .mask_active {
+        width: 35vw;
+    }
+
+    nav {
+        width: 65vw;
+    }
+
+    /* ------サイドバー------ */
+
+    /* -------メインビジュアル------- */
+    .top_contentbox img {
+        width: 60%;
+
+    }
+
+    /* 流体シェイプ */
+
+    .span_item01 {
+        width: 70px;
+        height: 70px;
+        top: 52%;
+        left: 62%;
+    }
+
+    .back_item01 {
+        width: 70px;
+        height: 70px;
+        top: 59%;
+        left: 67%;
+    }
+
+    .span_item02 {
+        width: 100px;
+        height: 101px;
+        top: 40%;
+        left: 13%;
+    }
+
+    .back_item02 {
+        width: 100px;
+        height: 100px;
+        top: 35%;
+        left: 10%;
+    }
+
+    .span_item03 {
+        width: 100px;
+        height: 101px;
+        top: 30%;
+        left: 57%;
+    }
+
+    .back_item03 {
+        width: 100px;
+        height: 100px;
+        top: 25%;
+        left: 65%;
+    }
+
+    /* 内容 */
+    /* 北関東学院について */
+
+    .backnumber01::before,
+    .backnumber02::before,
+    .backnumber03::before,
+    .backnumber04::before,
+    .backnumber05::before {
+        left: -31%;
+        font-size: 9.2rem;
+    }
+
+    .school_p {
+        max-width: 100%;
+        height: 400px;
+        top: 48%;
+    }
+
+    /* ------北関東学院について終わり------ */
+
+    /* ------コースについて------ */
+    .course_contentbox {
+        flex-wrap: wrap;
+    }
+
+    .course_content {
+        margin: 40px 0px;
+    }
+
+    /* ------その他情報------ */
+    /* ------ アクセス ------ */
+
+    .access_content {
+        display: block;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        height: 800px;
+    }
+
+    .access_text {
+        width: 100%;
+        height: 388px;
+        padding: 40px;
+        margin: auto 0;
+        background-color: gold;
+    }
+
+
+
+    .access_streetview {
+        width: 100%;
+        height: 350px;
+        margin: 40px 0;
+    }
+
+
+    #map {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0px;
+    }
+
+    /*  */
+}
