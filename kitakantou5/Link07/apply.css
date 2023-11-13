@@ -1,0 +1,439 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    /* font-family: 'yu mincho'; */
+}
+
+.loading {
+    width: 100%;
+    /* vw でもよい*/
+    height: 100vh;
+    transition: all 0.5s;
+    background: #fff;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /*ロード中は画面全体に確実にそれが表示されるための指定たち*/
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* header */
+
+.openbtn {
+    /* background: skyblue; */
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    /*  */
+    /* position: relative; */
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.openbtn:hover {
+    background: rgb(47, 48, 46);
+    transition: all 2s;
+}
+
+.openbtn span {
+    display: inline-block;
+    width: 80%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    /* opacity: 1; */
+}
+
+.openbtn span:nth-child(1) {
+    top: 15px;
+}
+
+.openbtn span:nth-child(2) {
+    top: 23px;
+}
+
+.openbtn span:nth-child(3) {
+    top: 31px;
+}
+
+
+
+/*  */
+.active .openbtn {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 1;
+}
+
+.active span:nth-child(1) {
+    transform: translateY(6px) rotate(-45deg);
+    width: 100%;
+    top: 18px;
+    left: 0;
+}
+
+.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.active span:nth-child(3) {
+    transform: translateY(6px) rotate(45deg);
+    width: 100%;
+    top: 18px;
+    left: 0;
+}
+
+/*  */
+
+
+nav {
+    background: rgb(47, 48, 46);
+    position: fixed;
+    /* left: 0%; */
+    right: -20%;
+    height: 100vh;
+    width: 20%;
+    /*  */
+    padding-top: 25vh;
+    /* bottom: 100%; */
+    transition: all 0.8s;
+    z-index: 1;
+}
+
+nav ul li {
+    list-style-type: none;
+    /* text-align: center; */
+    text-align: left;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 35px;
+    padding-left: 10%;
+    opacity: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: yellow;
+    border-bottom: 1px solid yellow;
+}
+
+.overlay {
+    background-color: #919090;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 2s;
+    visibility: hidden;
+    z-index: 0;
+}
+
+
+/*  */
+.active nav {
+    right: 0;
+}
+
+/* .active nav ul li {
+    opacity: 1;
+    transition: opacity 2s;
+} */
+
+.active .list1 {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.active .list2 {
+    opacity: 1;
+    transition: opacity 2.5s;
+}
+
+.active .list3 {
+    opacity: 1;
+    transition: opacity 3s;
+}
+
+.active .list4 {
+    opacity: 1;
+    transition: opacity 3.5s;
+}
+
+.active .list5 {
+    opacity: 1;
+    transition: opacity 4s;
+}
+
+.active .list6 {
+    opacity: 1;
+    transition: opacity 4.5s;
+}
+
+.active .list7 {
+    opacity: 1;
+    transition: opacity 5s;
+}
+
+.active .list8 {
+    opacity: 1;
+    transition: opacity 5.5s;
+}
+
+.active .list9 {
+    opacity: 1;
+    transition: opacity 6s;
+}
+
+.active .overlay {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+
+/*  */
+
+
+
+.mainvisual_box {
+    width: 100%;
+    height: 45vh;
+    background: rgb(32, 17, 95);
+}
+
+.head_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+    /* background: rgb(236, 231, 231); */
+}
+
+/*  */
+.change-color {
+    background: rgba(190, 189, 189, 0.6);
+    transition: 1.5s;
+}
+
+/*  */
+
+
+
+.head_logo_box {
+    width: 10%;
+    padding: 5px;
+}
+
+.head_logo_box:hover {
+    background: rgb(47, 48, 46);
+    transition: all 2s;
+}
+
+.head_logo_box img {
+    width: 100%;
+}
+
+
+/* main */
+
+section {
+    margin: 25vh 0;
+    /* background: orange; */
+}
+
+.section-title-box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    color: #fff;
+    padding-top: 25vh;
+    /* background: blue; */
+}
+
+.section-number-area {
+    width: 39%;
+    text-align: right;
+    font-style: oblique;
+    font-size: 12px;
+}
+
+.section-title-area {
+    width: 61%;
+    text-align: left;
+    padding-top: 12px;
+    font-size: 20px;
+}
+
+.section-subtitle-box {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 56px;
+}
+
+.section-subtitle-box h3 {
+    position: relative;
+}
+
+.section-subtitle-box h3::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 1px;
+    height: 25vh;
+    margin: auto;
+    background-color: #aaa9a9;
+}
+
+
+
+
+.main-text-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-text-box h2 {
+    margin: 56px 0;
+    padding-top: 24px;
+}
+
+
+/* 申込方法の説明追加 */
+.content {
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content .box {
+    width: 100%;
+    padding: 24px;
+    margin: 5px;
+    background-color: rgb(32, 17, 95);
+    position: relative;
+    overflow: hidden;
+}
+
+.caption1 {
+    position: absolute;
+    left: 5px;
+    top: 80%;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+}
+
+.captionbox {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.caption2 {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 10% 5% 0 0;
+    letter-spacing: 0;
+    color: white;
+}
+
+.box_title {
+    background-color: white;
+    height: 2px;
+}
+
+.box_title h2 {
+    padding-top: 0;
+    color: rgba(227, 224, 224, 0.3);
+    font-size: 64px;
+}
+
+
+
+
+/* tablet screen */
+@media(max-width:800px) {
+    .active nav {
+        width: 35vw;
+    }
+
+    .caption1 {
+        font-size: 16px;
+        top: 5%;
+    }
+
+    .caption2 {
+        font-size: 16px;
+        top: 50%;
+    }
+
+    .caption2 br {
+        display: none;
+    }
+}
+
+/* sp screen */
+@media(max-width:400px) {
+    .active nav {
+        width: 60vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./design.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="loading" id="loading"></div>
+    <header>
+
+        <nav id="nav_target">
+            <div class="openbtn" id="target">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="g-nav">
+                <li class="list1"><a href="../index.html">トップページ</a></li>
+                <li class="list2"><a href="../Link/about us.html">北関東学院とは</a></li>
+                <li class="list3"><a href="#">WEB デザインクリエーター科</a></li>
+                <li class="list4"><a href="../Link03/program.html">WEB プログラミングデザイン科</a></li>
+                <li class="list5"><a href="../Link04/frontend.html">WEB フロントエンド構築科</a></li>
+                <li class="list6"><a href="../Link05/staff.html">スタッフ紹介</a></li>
+                <li class="list7"><a href="../Link06/Alumni.html">修了生の声</a></li>
+                <li class="list8"><a href="../Link07/apply.html">申込方法</a></li>
+                <li class="list9"><a href="../Link08/office.html">会社概要</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay" id="js-overlay"></div>
+
+        <div class="mainvisual_box" id="main">
+            <div class="head_box">
+                <div class="head_logo_box">
+                    <a href="#"><img src="../img/foot_logo.png" alt="左上ロゴ"></a>
+                </div>
+            </div>
+            <div class="section-title-box">
+                <div class="section-number-area">
+                    <h2>#02-1</h2>
+                </div>
+                <div class="section-title-area" id="about us">
+                    <h1>VOCATIONAL TRAINING</h1>
+                </div>
+            </div>
+            <div class="section-subtitle-box">
+                <h3>WEB デザインクリエーター科</h3>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="main-text-box">
+                <h2>"最新のトレンドを学習して 未経験からWEBデザイナーへ就職"</h2>
+                <p>Web制作の職場で、Illustrator CC・Photoshop CC・jQuery等を用い、 Webデザイナー及びクリエイターとして現場実務ができることを目標としたコースです。</p>
+
+                <!-- コース説明追加 -->
+                <div class="content">
+                    <p class="head_01">自分でWEBサイトを作ってみたい</p>
+                    <p class="head_02">名刺やチラシのデザインを作ってみたい</p>
+                    <p class="head_03">WEBデザイナーやクリエイターになりたい</p>
+                    <h3>そんなあなたに!</h3>
+                    <ul>
+                        <li>WEBに関する基礎的な知識や概念等ひとつひとつ丁寧に説明してくれるので初心者でも安心♪</li>
+                        <li>Illustrator,Photoshopを使って制作技術を身につけるので、就職先で違和感なく仕事に入れる♪</li>
+                        <li>HTML＆CSSをしっかり身につけて、自分でホームページを作ったり編集することができるようになる♪</li>
+                        <li>jQueryやWordpressも学べる♪</li>
+                    </ul>
+                    <h3>目指せるお仕事は？</h3>
+                    <p>WEBデザイナー,WEBクリエイター,HTMLコーダー,WEB編集等々他多数</p>
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- <h6 class="yohaku"></h6> -->
+    </main>
+
+
+
+
+    <script>
+        $('#target').click(() => {
+            $('body').toggleClass('active');
+            // $('#nav_target').toggleClass('active');
+        });
+
+        $("#g-nav a").click(() => {
+            $('body').removeClass('active');
+            // $('#nav_target').removeClass('active');
+        })
+
+        $("#js-overlay").click(() => {
+            $('body').removeClass('active');
+            // $('#nav_target').removeClass('active');
+        })
+
+        const scrollAdd = () => {                        // 動きの起点は、画面を一定の高さ以上にスクロールしたとき
+            let headerheight = $('#main').outerHeight(); // id="main" の高さ取得                                                   
+            let scroll = $(window).scrollTop();         //スクロール値の取得
+
+            if (scroll >= headerheight) {
+                $('.head_box').addClass('change-color');
+            } else {
+                $('.head_box').removeClass('change-color');
+            };
+        }
+        //↓動かすタイミング(画面をスクロールしたときに動かす)
+        $(window).scroll(() => {
+            scrollAdd();
+        });
+
+    </script>
+
+    <script src="./design.js"></script>
+</body>
+
+</html>

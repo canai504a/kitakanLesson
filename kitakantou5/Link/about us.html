@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./about us.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="loading" id="loading"></div>
+    <header>
+
+        <nav id="nav_target">
+            <div class="openbtn" id="target">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="g-nav">
+                <li class="list1"><a href="../index.html">トップページ</a></li>
+                <li class="list2"><a href="#">北関東学院とは</a></li>
+                <li class="list3"><a href="../Link02/design.html">WEB デザインクリエーター科</a></li>
+                <li class="list4"><a href="../Link03/program.html">WEB プログラミングデザイン科</a></li>
+                <li class="list5"><a href="../Link04/frontend.html">WEB フロントエンド構築科</a></li>
+                <li class="list6"><a href="../Link05/staff.html">スタッフ紹介</a></li>
+                <li class="list7"><a href="../Link06/Alumni.html">修了生の声</a></li>
+                <li class="list8"><a href="../Link07/apply.html">申込方法</a></li>
+                <li class="list9"><a href="../Link08/office.html">会社概要</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay" id="js-overlay"></div>
+
+        <div class="mainvisual_box" id="main">
+            <div class="head_box">
+                <div class="head_logo_box">
+                    <a href="#"><img src="../img/foot_logo.png" alt="左上ロゴ"></a>
+                </div>
+            </div>
+            <div class="section-title-box">
+                <div class="section-number-area">
+                    <h2>#01</h2>
+                </div>
+                <div class="section-title-area" id="about us">
+                    <h1>ABOUT US</h1>
+                </div>
+            </div>
+            <div class="section-subtitle-box">
+                <h3>北関東学院とは</h3>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="main-text-box">
+                <h2>"最新を学習できる職業訓練校"</h2>
+                <p>北関東学院とは、<br>
+                    厚生労働省管轄の企業が実施している求職者支援訓練校（職業訓練校）です。<br>
+                    Webやパソコンに関連する専門技術や最新の知識を学習することができる<br>
+                    複数の学習コースを実施しております。</p>
+            </div>
+            <div class="section-box">
+                <div class="title-box">
+                    <h2>FREE WEB SCHOOL</h2>
+                    <h4>職業訓練校だから受講料が無料</h4>
+                </div>
+                <div class="introduction-box">
+                    <div class="introduct-img-box">
+                        <img src="../main.images/free school.jpg" alt="free school">
+                    </div>
+                    <div class="introduct-text-box">
+                        <p>受講期間は約半年間あり、
+                            その間の授業料はすべて無料です。<br>
+                            北関東学院ではその期間で近年利用されている様々な言語やソフトウェアを学習します。<br>
+                            簡潔に説明すると、Webに関する専門技術・最新知識が勉強できる受講料金0円のパソコン教室だと思ってください。<br>
+                            加えて、 毎月10万円の手当+交通費が給付金として支給される場合があります。<br>
+                            （給付金については弊社では判断できかねる為、お手数ですがお近くのハローワークにてご相談ください。）</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="section-box">
+                <div class="title-box">
+                    <h2>JOB HUNTING</h2>
+                    <h4>未経験からでも就職・転職</h4>
+                </div>
+                <div class="introduction-box">
+                    <div class="introduct-img-box">
+                        <img src="../main.images/job hunting.jpg" alt="job hunt">
+                    </div>
+                    <div class="introduct-text-box">
+                        <p>今までパソコンを使用した職務の経験が無くてもIT企業へ就職・転職した受講生が多数おります。<br>
+                            今見ているこのホームページの制作技術も半年間しっかり学習するので 6ヶ月後には未経験からでも制作できるようになります。
+                        </p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+        </section>
+        <!-- <h6 class="yohaku"></h6> -->
+    </main>
+
+
+
+
+
+    <script>
+        $('#target').click(() => {
+            $('body').toggleClass('active');
+            // $('#nav_target').toggleClass('active');
+        });
+
+        $("#g-nav a").click(() => {
+            $('body').removeClass('active');
+            // $('#nav_target').removeClass('active');
+        })
+
+        $("#js-overlay").click(() => {
+            $('body').removeClass('active');
+            // $('#nav_target').removeClass('active');
+        })
+
+        const scrollAdd = () => {                        // 動きの起点は、画面を一定の高さ以上にスクロールしたとき
+            let headerheight = $('#main').outerHeight(); // id="main" の高さ取得                                                   
+            let scroll = $(window).scrollTop();         //スクロール値の取得
+
+            if (scroll >= headerheight) {
+                $('.head_box').addClass('change-color');
+            } else {
+                $('.head_box').removeClass('change-color');
+            };
+        }
+        //↓動かすタイミング(画面をスクロールしたときに動かす)
+        $(window).scroll(() => {
+            scrollAdd();
+        });
+
+    </script>
+
+    <script src="./about.js"></script>
+</body>
+
+</html>

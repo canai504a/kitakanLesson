@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./apply.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="loading" id="loading"></div>
+    <header>
+
+        <nav id="nav_target">
+            <div class="openbtn" id="target">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="g-nav">
+                <li class="list1"><a href="../index.html">トップページ</a></li>
+                <li class="list2"><a href="../Link/about us.html">北関東学院とは</a></li>
+                <li class="list3"><a href="../Link02/design.html">WEB デザインクリエーター科</a></li>
+                <li class="list4"><a href="../Link03/program.html">WEB プログラミングデザイン科</a></li>
+                <li class="list5"><a href="../Link04/frontend.html">WEB フロントエンド構築科</a></li>
+                <li class="list6"><a href="../Link05/staff.html">スタッフ紹介</a></li>
+                <li class="list7"><a href="../Link06/Alumni.html">修了生の声</a></li>
+                <li class="list8"><a href="#">申込方法</a></li>
+                <li class="list9"><a href="../Link08/office.html">会社概要</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay" id="js-overlay"></div>
+
+        <div class="mainvisual_box" id="main">
+            <div class="head_box">
+                <div class="head_logo_box">
+                    <a href="#"><img src="../img/foot_logo.png" alt="左上ロゴ"></a>
+                </div>
+            </div>
+            <div class="section-title-box">
+                <div class="section-number-area">
+                    <h2>#03-3</h2>
+                </div>
+                <div class="section-title-area" id="about us">
+                    <h1>HOW TO APPLY</h1>
+                </div>
+            </div>
+            <div class="section-subtitle-box">
+                <h3>申込方法</h3>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="main-text-box">
+
+                <!-- 申込方法の説明追加 -->
+                <h2>" お申し込みの手順"</h2>
+                <div class="content">
+                    <div class="box">
+                        <div class="box_title">
+                            <h2>01</h2>
+                        </div>
+                        <div class="box_text">
+                            <h4 class="caption1">ハローワークへ</h4>
+                            <div class="captionbox">
+                                <p class="caption2">
+                                    求職申込を行い
+                                    <br>求職者支援制度の
+                                    <br>説明を受ける。※
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_title">
+                            <h2>02</h2>
+                        </div>
+                        <div class="box_text">
+                            <h4 class="caption1">選ぶ</h4>
+                            <div class="captionbox">
+                                <p class="caption2">
+                                    訓練を選択。
+                                    <br>必要書類を受取る。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_title">
+                            <h2>03</h2>
+                        </div>
+                        <div class="box_text">
+                            <h4 class="caption1">申込む</h4>
+                            <div class="captionbox">
+                                <p class="caption2">
+                                    受講申込手続き。
+                                    <br>当校に郵送or持参。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_title">
+                            <h2>04</h2>
+                        </div>
+                        <div class="box_text">
+                            <h4 class="caption1">選考会</h4>
+                            <div class="captionbox">
+                                <p class="caption2">指定された日時に
+                                    <br>当校にて筆記試験と面接。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_title">
+                            <h2>05</h2>
+                        </div>
+                        <div class="box_text">
+                            <h4 class="caption1">合格通知</h4>
+                            <div class="captionbox">
+                                <p class="caption2">「合格」の通知が届いたらハローワークへ提出。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box_title">
+                            <h2>06</h2>
+                        </div>
+                        <div class="box_text">
+                            <h4 class="caption1">受講開始</h4>
+                            <div class="captionbox">
+                                <p class="caption2">訓練スタート!
+                                    <br>Go To Yourlife!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- <h6 class="yohaku"></h6> -->
+    </main>
+
+
+
+
+    <script>
+        $('#target').click(() => {
+            $('body').toggleClass('active');
+            // $('#nav_target').toggleClass('active');
+        });
+
+        $("#g-nav a").click(() => {
+            $('body').removeClass('active');
+            // $('#nav_target').removeClass('active');
+        })
+
+        $("#js-overlay").click(() => {
+            $('body').removeClass('active');
+            // $('#nav_target').removeClass('active');
+        })
+
+        const scrollAdd = () => {                        // 動きの起点は、画面を一定の高さ以上にスクロールしたとき
+            let headerheight = $('#main').outerHeight(); // id="main" の高さ取得                                                   
+            let scroll = $(window).scrollTop();         //スクロール値の取得
+
+            if (scroll >= headerheight) {
+                $('.head_box').addClass('change-color');
+            } else {
+                $('.head_box').removeClass('change-color');
+            };
+        }
+        //↓動かすタイミング(画面をスクロールしたときに動かす)
+        $(window).scroll(() => {
+            scrollAdd();
+        });
+
+    </script>
+
+    <script src="./apply.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <div class="loading" id="loading"></div>
+
+
+    <header>
+        <div class="head_box">
+            <div class="head_logo_box">
+                <a href="./index.html"><img src="./img/foot_logo.png" alt="左上ロゴ"></a>
+            </div>
+        </div>
+        <nav id="nav_target">
+            <div class="openbtn" id="target">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="g-nav">
+                <li class="list1"><a href="./index.html">トップページ</a></li>
+                <li class="list2"><a href="./Link/about us.html">北関東学院とは</a></li>
+                <li class="list3"><a href="./Link02/design.html">WEB デザインクリエーター科</a></li>
+                <li class="list4"><a href="./Link03/program.html">WEB プログラミングデザイン科</a></li>
+                <li class="list5"><a href="./Link04/frontend.html">WEB フロントエンド構築科</a></li>
+                <li class="list6"><a href="./Link05/staff.html">スタッフ紹介</a></li>
+                <li class="list7"><a href="./Link06/Alumni.html">修了生の声</a></li>
+                <li class="list8"><a href="./Link07/apply.html">申込方法</a></li>
+                <li class="list9"><a href="./Link08/office.html">会社概要</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay" id="js-overlay"></div>
+
+        <div class="mainvisual_box" id="main">
+            <div class="mainvisual_img_move_box">
+                <div class="mainvisual_img_box">
+                    <img src="./img/kitakantou_icon.png" alt="中央ロゴ">
+                    <div class="mainvisual_text_box">
+                        <h3>KITAKANTO GAKUIN</h3>
+                        <h3>北関東学院</h3>
+                    </div>
+                    <h2>未経験から</h2>
+                    <h2>IT関係のお仕事へ</h2>
+                    <p>就職・転職を目指す職業訓練校</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <div class="section-title-box">
+                <div class="section-number-area">
+                    <h2>#01</h2>
+                </div>
+                <div class="section-title-area" id="about us">
+                    <h1>ABOUT US</h1>
+                </div>
+            </div>
+            <div class="section-subtitle-box">
+                <h3>北関東学院とは</h3>
+            </div>
+            <div class="main-text-box">
+                <h2>"未経験からでもIT業界へ就職・転職できる職業訓練校"</h2>
+                <p>北関東学院とはWebやパソコンに関するスキルアップを通じて<br>
+                    早期就職を目指す為の厚生労働省認定の職業訓練校です。<br>
+                    近年の現場で必要な技術を半年間無料で学習できるので、未経験からでも<br>
+                    IT業界のお仕事へ就職した方も多くおります。</p>
+            </div>
+            <div class="link-box">
+                <a href="./Link/about us.html">詳細はこちら ></a>
+            </div>
+        </section>
+
+        <section class="section02">
+            <div class="section-title-box">
+                <div class="section-number-area section-number-area02">
+                    <h2>#02</h2>
+                </div>
+                <div class="section-title-area section-title-area02" id="content to study">
+                    <h1>CONTENT TO STUDY</h1>
+                </div>
+            </div>
+            <div class="section-subtitle-box">
+                <h3>北関東学院で学習できる内容</h3>
+            </div>
+            <div class="main-text-box">
+                <h2>"最新のソフト・パソコンで「今」必要な技術・知識が学習できる"</h2>
+                <p>北関東学院では「今」必要な技術・知識を受講生の方に学習して頂くために、<br>
+                    最新のツールやソフトウェアを用意しております。<br>
+                    また、時代に合わせた言語を学習できるように<br>
+                    訓練内容は以下の３つのコースより構成しております。</p>
+            </div>
+
+            <div class="couse-select-box">
+                <div class="cousebox">
+                    <div class="couse-imgbox">
+                        <img src="./main.images/web design.jpg" alt="デザイン">
+                    </div>
+                    <div class="couse-textbox">
+                        <h2>DESIGN CREATE</h2>
+                        <h4>WEB デザインクリエーター科</h4>
+                        <p>Web制作の職場で、Illustrator CC・Photoshop CC・jQuery等を用い、
+                            Webデザイナー及びクリエイターとして現場実務ができることを目標としたコースです。
+                        </p>
+                    </div>
+                    <div class="link-box">
+                        <a href="./Link02/design.html">詳細はこちら ></a>
+                    </div>
+                </div>
+                <div class="cousebox">
+                    <div class="couse-imgbox">
+                        <img src="./main.images/programer.png" alt="プログラマー">
+                    </div>
+                    <div class="couse-textbox">
+                        <h2>PROGRAM DESIGN</h2>
+                        <h4>WEB プログラミングデザイン科</h4>
+                        <p>WEB制作を行う職場においてWEBプログラム、コーディング、データベース構築等、
+                            プログラミング関係の仕事に従事できるようになることを目標としたコースです。
+                        </p>
+                    </div>
+                    <div class="link-box">
+                        <a href="./Link03/program.html">詳細はこちら ></a>
+                    </div>
+                </div>
+                <div class="cousebox">
+                    <div class="couse-imgbox">
+                        <img src="./main.images/front end.jpg" alt="フロントエンド">
+                    </div>
+                    <div class="couse-textbox">
+                        <h2>FRONT END</h2>
+                        <h4>WEB フロントエンド構築科</h4>
+                        <p>フロントエンド業務においてWEBプログラム、コーディング、データベース構築等、
+                            プログラミング関係の仕事に従事することを目標としたコースです。
+                        </p>
+                    </div>
+                    <div class="link-box">
+                        <a href="./Link04/frontend.html">詳細はこちら ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section03">
+            <div class="section-title-box">
+                <div class="section-number-area section-number-area03">
+                    <h2>#03</h2>
+                </div>
+                <div class="section-title-area section-title-area03" id="other information">
+                    <h1>OTHER INFORMATION</h1>
+                </div>
+            </div>
+            <div class="section-subtitle-box">
+                <h3>その他情報</h3>
+            </div>
+            <div class="main-text-box">
+                <h2>"未経験からでもIT業界へ就職・転職できる職業訓練校"</h2>
+                <p>北関東学院について、スタッフの紹介や職業訓練受講修了後の受講生からの声、<br>
+                    お申し込み手順、弊社の概要など様々情報を掲載しております。</p>
+            </div>
+
+            <div class="other-select-box">
+                <div class="otherbox">
+                    <div class="other-imgbox other-imgbox01">
+                        <a href="./Link05/staff.html"><img src="./main.images/staff.jpg" alt="スタッフ"></a>
+                        <div class="other-textbox other-textbox01">
+                            <a href="./Link05/staff.html">
+                                <h3>スタッフ紹介</h3>
+                                <p>詳細はこちら</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="otherbox">
+                    <div class="other-imgbox other-imgbox02">
+                        <a href="./Link06/Alumni.html"><img src="./main.images/studeted.jpg" alt="修了生"></a>
+                        <div class="other-textbox other-textbox02">
+                            <a href="./Link06/Alumni.html">
+                                <h3>修了生の声</h3>
+                                <p>詳細はこちら</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="otherbox">
+                    <div class="other-imgbox other-imgbox03">
+                        <a href="./Link07/apply.html"><img src="./main.images/writing sheet.jpg" alt="申込"></a>
+                        <div class="other-textbox other-textbox03">
+                            <a href="./Link07/apply.html">
+                                <h3>申込方法</h3>
+                                <p>詳細はこちら</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="otherbox">
+                    <div class="other-imgbox other-imgbox04">
+                        <a href="./Link08/office.html"><img src="./main.images/company info.jpg" alt="会社概要"></a>
+                        <div class="other-textbox other-textbox01">
+                            <a href="./Link08/office.html">
+                                <h3>会社概要</h3>
+                                <p>詳細はこちら</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <section class="section04">
+            <div class="set-foot-imgbox">
+                <div class="foot-imgbox">
+                    <a href="./index.html"><img src="./img/logo.png" alt="北関東ロゴ"></a>
+                </div>
+            </div>
+            <h3>お問い合わせ</h3>
+            <h5>募集期間中にコース説明会を実施しておりますのでお気軽にご連絡・ご相談ください。</h5>
+            <p>📞011-232-5508<br>
+                （受付時間:9:00 ~ 17:00）</p>
+            <h3>サイトコンテンツ</h3>
+            <div class="site-box">
+                <ul class="ul01">
+                    <a href="./Link/about us.html">
+                        <li>> 北関東学院とは</li>
+                    </a>
+                    <a href="./Link02/design.html">
+                        <li>> WEB デザインクリエーター科</li>
+                    </a>
+                    <a href="./Link03/program.html">
+                        <li>> WEB プログラミングデザイン科</li>
+                    </a>
+                    <a href="./Link04/frontend.html">
+                        <li>> WEB フロントエンド構築科</li>
+                    </a>
+                </ul>
+                <ul class="ul02">
+                    <a href="./Link05/staff.html">
+                        <li>> スタッフ紹介</li>
+                    </a>
+                    <a href="./Link06/Alumni.html">
+                        <li>> 修了生の声</li>
+                    </a>
+                    <a href="./Link07/apply.html">
+                        <li>> 申込方法</li>
+                    </a>
+                    <a href="./Link08/office.html">
+                        <li>> 会社概要</li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+
+        <h6>ⓒ KITAKNTO GAKUIN.Inc</h6>
+    </footer>
+
+
+    <script>
+        $('#target').click(() => {
+            $('body').toggleClass('active');
+            // $('#nav_target').toggleClass('active');
+        });
+
+        $("#g-nav a").click(() => {
+            $('body').removeClass('active');
+            // $('#nav_target').removeClass('active');
+        })
+
+        $("#js-overlay").click(() => {
+            $('body').removeClass('active');
+            // $('#nav_target').removeClass('active');
+        })
+
+
+        const scrollAdd = () => {                        // 動きの起点は、画面を一定の高さ以上にスクロールしたとき
+            let headerheight = $('#main').outerHeight(); // id="main" の高さ取得                                                   
+            let scroll = $(window).scrollTop();         //スクロール値の取得
+
+            if (scroll >= headerheight) {
+                $('.head_box').addClass('change-color');
+            } else {
+                $('.head_box').removeClass('change-color');
+            };
+        }
+        //↓動かすタイミング(画面をスクロールしたときに動かす)
+        $(window).scroll(() => {
+            scrollAdd();
+        });
+
+    </script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
