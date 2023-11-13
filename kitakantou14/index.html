@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北関東学院</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="loading" id="loading">
+        <iframe src="./loading.html"></iframe>
+    </div>
+
+    <header id="toptop">
+        <nav id="top">
+            <a href="#toptop">
+                <img src="./logo_glade.png" alt="logo" class="logo">
+                <img src="./foot_logo.png" alt="logo" class="logo2">
+            </a>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#course">コース</a></li>
+                    <li><a href="#impressions">修了生の声</a></li>
+                    <li><a href="#news">開講情報</a></li>
+                    <li><a href="#entry">申し込み手順</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+                 <div class="wrapper">
+                <ul class="slide-items">
+                    <li><img src="./img/frontendkoutiku.jpg" alt="Image 1"></li>
+                    <li><img src="./img/programingka.jpg" alt="Image 2"></li>
+                    <li><img src="./img/webcreate.jpg" alt="Image 3"></li>
+                </ul>
+                <div class="content">
+                    <h1>職業訓練校でITスキルアップ<br>
+                        を目指しましょう！</h1>
+                </div>
+                <div class="wrapper_img">
+                    <a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/kyusyokusya/hokenzyukyu/ippan/6-2.html" target="_blank">
+                        <img src="./img/Balloonmoji.png" alt="alt">
+                    </a>
+                </div>
+                <div class="point">
+                  <img src="./img/pointer.png" alt="usa">
+                </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	        <!-- sliclsliderのプラグイン↑(slick-carousel) -->
+			<!-- プラグインを有効にしたので下のコードが有効化出来て数値を変えられる -->
+        <script>
+            $('.slide-items').slick({
+                autoplay: true, // 自動再生
+                autoplaySpeed: 3500,
+                fade: true, // スライドをフェードイン・フェードアウト
+                cssEase: 'linear',// アニメーション
+                speed: 1300, // フェードアニメーションの速度設定
+                //arrows: true, // 矢印
+                //dots: true, // インジケーター
+            });
+        </script>
+    </header>
+
+    <main>
+        <section id="course">
+            <div class="section_heading">
+               <h3>コース</h3>
+               <p>WEBクリエイター・プログラミングデザイン科・フロントエンド構築科を開講しています。</p>
+            </div>
+
+            <div class="course_box">
+                <img src="./img/design.jpg" alt="">
+                <div class="course_contentbox">
+                    <div class="course_content_textarea">
+                        <p class="glowAnime">Webデザインクリエイター科</p>
+                        <p class="glowAnime">PhotoshopCC・IllustratorCC・jQueryを活用し制作技術を学習します。</p>
+                        <p class="glowAnime">＜目指せるお仕事＞WEBデザイナー、HTMLコーダー等</p>
+                    </div>
+                    <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-17/js/8-17.js"></script>
+
+                </div>
+            </div>
+
+            <div class="course_box reverse">
+                <img src="./img/meating.jpg" alt="">
+                <div class="course_contentbox">
+                    <div class="course_content_textarea">
+                        <p class="glowAnime">WEBプログラミングデザイン科</p>
+                        <p class="glowAnime">JavaScript、PHP、MySQL等のアプリ開発を学びます。</p>
+                        <p class="glowAnime">＜目指せるお仕事＞WEBサイト管理者、ネットワーク管理者等</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course_box">
+                <img src="./img/pro.jpeg" alt="">
+                <div class="course_contentbox">
+                    <div class="course_content_textarea">
+                        <p class="glowAnime">Webフロントエンド構築科</p>
+                        <p class="glowAnime">JAVA、PHP等開発に関する実用的な知識と技術の習得をします。</p>
+                        <p class="glowAnime">＜目指せるお仕事＞データベース構築者、JAVAプログラマー等</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="section_impressions" id="impressions">
+        <div class="section_heading">
+            <h3>修了生の声</h3>
+        </div>
+        <div class="impressions_box">
+            <div>
+                <img src="./img/voice_03.jpg" alt="job_search">
+                <img src="./img/voice_01.jpg" alt="job_search">
+                <img src="./img/voice_02.jpg" alt="job_search">
+            </div>
+            <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html" target="_blank" class="button">
+                ▽求職者支援制度のご案内はコチラ▽
+            </a>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="section_heading">
+            <h3>新着情報・開講コース情報</h3>
+        </div>
+        <ul class="news-list">
+            <li class="item">
+                    <p class="date">10月26日より</p>
+                    <p class="category2"><span>募集開始</span></p>
+                    <p class="title">12月開講WEBデザインクリエーター科</p>
+                    <p class="notice">
+                        <a href="http://www.kitakanto-gakuin.net/flyer/web_2023_12.pdf" target="_blank">
+                            詳しい資料はこちら
+                        </a>
+                    </p>
+            </li>
+            <li class="item">
+                    <p class="date">2020/12/5</p>
+                    <p class="category1"><span>受付終了</span></p>
+                    <p class="title">11月開講WEBデザインクリエーター科</p>
+            </li>
+            <li class="item">
+                    <p class="date">2020/11/15</p>
+                    <p class="category1"><span>受付終了</span></p>
+                    <p class="title">10月開講WEBデザインクリエーター科</p>
+            </li>
+            <li class="item">
+                    <p class="date">2020/4/15</p>
+                    <p class="category1"><span>受終</span></p>
+                    <p class="title">9月開講WEBフロントエンド構築科</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section_entry" id="entry">
+            <div class="section_heading">
+                <h3>申し込み手順</h3>
+            </div>
+            <div class="entry">
+                <img src="./img/apply.jpg" alt="">
+            </div>
+    </section>
+
+    <section class="section_contact" id="contact">
+        <div class="section_heading">
+            <h3>お問い合わせ</h3>
+        </div>
+        <div class="contact">
+            <a href="tel:011-232-5508"><img src="./img/LP_56_touka.png" alt="phone_call"></a>
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+
+        <div class="footer_content">
+            <div class="link">
+                <div class="address">
+                    <h3>北関東学院</h3>
+                    <p>〒064-0809 北海道札幌市中央区南９条西<br>
+                    ３丁目２−１０ 札幌Ｋ．Ｓビル 6F</p>
+                    <p>☎&nbsp;011-232-5508</p>
+                </div>
+                <a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-sapporo.html">
+                    <h3>ハローワーク札幌</h3>
+                </a>
+                <a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-kita.html">
+                    <h3>ハローワーク札幌北</h3>
+                </a>
+                <a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-higashi2.html">
+                    <h3>ハローワーク札幌東</h3>
+                </a>
+                <a href="https://jsite.mhlw.go.jp/hokkaido-hellowork/list/sapporo/shisetsu/hw-plaza.html">
+                    <h3>ハローワークプラザ</h3>
+                </a>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11331.537499397275!2d141.34969979024035!3d43.04365490444384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a27ee23ea55%3A0xdedc877edeaf642!2z5YyX6Zai5p2x5a2m6Zmi!5e0!3m2!1sja!2sjp!4v1699317013942!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    
+    </footer>
+    
+    <script src="./main.js"></script>
+</body>
+
+</html>
