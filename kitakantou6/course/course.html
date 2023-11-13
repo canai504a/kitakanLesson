@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>北関東学院｜コース紹介</title>
+    <meta
+      name="description"
+      content="北関東学院は職業訓練(求職者支援訓練)校です。得意なジャンルとしてWEB関連の職業があり、就職に結びつけるために全力でサポートいたします。北関東学院には特色をもった３つのコースで初歩的な使い方から専門的な知識までを学ぶことが出来ます。"
+    />
+    <meta
+      name="keywords"
+      content="北関東学院,職業訓練,求職者支援訓練,パソコン,就職,ホームページ,WEBデザイン,プログラム,オフィスソフト"
+    />
+    <link rel="icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+
+  <body>
+    <div id="splash">
+      <div id="splash_logo">
+        <img src="../img/foot_logo.png" alt="" class="fadeUp" />
+      </div>
+    </div>
+
+    <header>
+      <nav>
+        <a href="../index.html">
+          <img src="../img/foot_logo.png" />
+        </a>
+        <!-- SPのnav -->
+        <div class="openbtn4"><span></span><span></span><span></span></div>
+        <!--  -->
+        <ul id="g-nav">
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="./course.html">Course</a></li>
+          <li><a href="../index.html#Support">Support</a></li>
+          <li><a href="../index.html#Access">Access</a></li>
+        </ul>
+      </nav>
+      <div class="main-visual">
+        <img src="../img/deskwork.jpg" />
+        <div class="main-visual-heading">
+          <h1>コース紹介</h1>
+        </div>
+      </div>
+    </header>
+
+    <main id="#course_main" class="course_main">
+      <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+
+      <div class="section_title">
+        <h1>開講コース一覧</h1>
+      </div>
+      <table class="tb01">
+        <tr>
+          <th>WEBデザインクリエーター科</th>
+          <td>詳細は<a href="#creater">こちら</a></td>
+        </tr>
+        <tr>
+          <th>WEBフロントエンド構築科</th>
+          <td>
+            詳細は<a href="#frontend">こちら</a>（※現在は募集していません）
+          </td>
+        </tr>
+        <tr>
+          <th>WEBプログラミングデザイン科</th>
+          <td>詳細は<a href="#program">こちら</a>（※現在は募集していません）</td>
+        </tr>
+      </table>
+
+      <div class="apply_button">
+        <a href="#Apply" class="apply_content"
+          ><h1>お申し込み方法はこちら</h1></a
+        >
+      </div>
+
+      <div class="course_detail">
+        <section id="creater">
+          <div class="watermark"></div>
+          <div class="section_title">
+            <h1>WEBデザインクリエーター科</h1>
+          </div>
+          <div class="course_area">
+          <h2>募集期間：2023年10月26日（木）～2023年11月22日（水）</h2>
+          <p>
+            WEBデザインの基礎であるHTML・CSSの習得や、現場で実際に使われているPhotoshopCC・
+            IllustratorCC・jQueryを活用・応用し、実戦に則した制作技術を習得を目指すコースです。
+          </p>
+          <h2>習得できるスキル</h2>
+          <ul class="skills">
+            <li
+              data-tooltip="ウェブサイトの基本的な骨組みを作る言語。ページの各部分をどこに配置するか決める"
+            >
+              <img src="../img/icon/icon_html.png" alt="" />
+            </li>
+            <li data-tooltip="ウェブサイトのデザインを整える言語。色、フォント、レイアウトを指定して美しく見せる">
+              <img src="../img/icon/icon_css.png" alt="" />
+            </li>
+            <li data-tooltip="写真やイメージを加工・編集するプロ用ソフト。リアルなビジュアル作成に欠かせない">
+              <img src="../img/icon/icon_ps.png" alt="" />
+            </li>
+            <li data-tooltip="イラストやロゴなど、クリアなラインのグラフィックを作成するためのソフト">
+              <img src="../img/icon/icon_ai.png" alt="" />
+            </li>
+            <li data-tooltip="JavaScriptのコードを簡単にかけるようにするライブラリ。動きや効果を手軽に追加">
+              <img src="../img/icon/icon_jq.png" alt="" />
+            </li>
+            <li data-tooltip="コーディング不要でウェブサイトが作れる人気のCMSツール。テーマやプラグインが豊富">
+              <img src="../img/icon/icon_wp.png" alt="" />
+            </li>
+          </ul>
+          <p>※クリックまたはタップで詳細※</p>
+          <!-- モーダルウィンドウのマークアップ（SP用） -->
+          <div id="modal" class="modal">
+          <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modal-text"></p>
+          </div>
+          </div>
+          <a href="../pdf/creater.pdf" target="_blank" class="pdf_button">
+            講座詳細（PDFファイルを開きます）
+            <span class="material-symbols-outlined"> open_in_new </span></a>
+          </div>
+        </section>
+
+        <section id="frontend">
+          <div class="watermark"></div>
+          <div class="section_title">
+            <h1>WEBフロントエンド構築科</h1>
+          </div>
+          <div class="course_area">
+          <div class="span_red">
+            <h2>募集期間：<span>現在は募集していません</span></h2>
+          </div>
+          <p>
+            様々なブラウザ（InternetExplorer、FireFox、Chrome、Edge等）で動作する、JavaScript、PHP等の開発に
+            関する実用的な知識と技能・技術の習得を目指すコースです。
+          </p>
+          <h2>習得できるスキル</h2>
+          <ul class="skills">
+            <li data-tooltip="ウェブサイトの基本的な骨組みを作る言語。ページの各部分をどこに配置するか決める">
+              <img src="../img/icon/icon_html.png" alt="" />
+            </li>
+            <li data-tooltip="ウェブサイトのデザインを整える言語。色、フォント、レイアウトを指定して美しく見せる">
+              <img src="../img/icon/icon_css.png" alt="" />
+            </li>
+            <li data-tooltip="ウェブページに動きをつけるプログラミング言語。ユーザーの操作に反応させる">
+              <img src="../img/icon/icon_js.png" alt="" />
+            </li>
+            <li data-tooltip="JavaScriptのコードを簡単にかけるようにするライブラリ。動きや効果を手軽に追加">
+              <img src="../img/icon/icon_jq.png" alt="" />
+            </li>
+            <li data-tooltip="サーバー側で動くプログラミング言語。データベースと連携し、動的なウェブサイトを作成">
+              <img src="../img/icon/icon_php.png" alt="" />
+            </li>
+            <li data-tooltip="コーディング不要でウェブサイトが作れる人気のCMSツール。テーマやプラグインが豊富">
+              <img src="../img/icon/icon_wp.png" alt="" />
+            </li>
+          </ul>
+          <a href="../pdf/frontend.pdf" target="_blank" class="pdf_button">
+            講座詳細（PDFファイルを開きます）
+            <span class="material-symbols-outlined"> open_in_new </span></a
+          >
+        </div>
+        </section>
+
+        <section id="program">
+          <div class="watermark"></div>
+          <div class="section_title">
+            <h1>WEBプログラミングデザイン科</h1>
+          </div>
+          <div class="course_area">
+          <div class="span_red">
+            <h2>
+              募集期間：<span>現在は募集していません</span>
+            </h2>
+          </div>
+          <p>
+            様々なブラウザ（InternetExplorer、FireFox、Chrome、Edge等）で動作する、JavaScript、PHP、
+            MySQL等のアプリ開発に関する実用的な知識と技能・技術の習得を目指すコースです。
+          </p>
+          <h2>習得できるスキル</h2>
+          <ul class="skills">
+            <li data-tooltip="ウェブページに動きをつけるプログラミング言語。ユーザーの操作に反応させる">
+              <img src="../img/icon/icon_js.png" alt="" />
+            </li>
+            <li data-tooltip="サーバー側で動くプログラミング言語。データベースと連携し、動的なウェブサイトを作成">
+              <img src="../img/icon/icon_php.png" alt="" />
+            </li>
+            <li data-tooltip="データベースから情報を取り出したり管理したりするためのクエリ言語。データ操作が要">
+              <img src="../img/icon/icon_sql.png" alt="" />
+            </li>
+          </ul>
+          <a href="../pdf/programing.pdf" target="_blank" class="pdf_button">
+            講座詳細（PDFファイルを開きます）
+            <span class="material-symbols-outlined"> open_in_new </span></a
+          >
+        </section>
+      </div>
+      </div>
+
+      <section id="Apply">
+        <h1>お申し込み方法</h1>
+        <div class="apply_box">
+          <p>1.ハローワークにて求職申込を行う</p>
+          <h3>
+            お近くのハローワークにて求職申込を行い、求職者支援制度の説明を受けてください。
+          </h3>
+          <h4>
+            ※支援制度・給付金等の詳細につきましては、当校ではわかりかねますのでハローワークにてご相談ください。
+          </h4>
+        </div>
+
+        <div class="apply_box_blue">
+          <p>2.訓練コースの選択</p>
+          <h3>
+            ハローワークで職業相談を受けつつ、受講したい訓練を選択します。<br />
+            受講申込書などの必要書類を受け取ってください。
+          </h3>
+        </div>
+
+        <div class="apply_box">
+          <p>3.訓練受講の申込</p>
+          <h3>
+            ハローワークで受講申込の手続きを行います。<br />
+            書類の記入を完了し、受付印を押してもらったら郵送もしくは持参で当校までご提出ください。
+          </h3>
+        </div>
+
+        <div class="apply_box_blue">
+          <p>4.選考会</p>
+          <h3>
+            指定された日時に当校にて筆記試験と面接を行います。<br />
+            筆記用具・必要書類を持参のうえお越しください。
+          </h3>
+        </div>
+
+        <div class="apply_box">
+          <p>5.合否通知</p>
+          <h3>
+            合格通知が届きましたら選考結果通知書をハローワークに提出し、就職支援計画書を受け取ってください。
+          </h3>
+        </div>
+      </section>
+    </main>
+
+    <!--フッター-->
+    <footer>
+      <img src="../img/foot_logo.png" />
+      <p>〒064-0809 北海道札幌市中央区南9条西3丁目10-97 札幌KSビル602</p>
+      <div class="calling">
+        <span class="material-symbols-outlined">
+          <a href="tel:011-232-5508">call</a>
+        </span>
+        <a href="tel:011-232-5508">011-232-5508</a>
+      </div>
+      <p>（平日9:00～18:00）</p>
+      <p>&copy;Kankyo-Design Co.,Ltd</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <!-- MENUがCLOSEに -->
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-4/js/5-2-4.js"></script>
+    <!-- クリックしたらナビが右から左に出現 -->
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-14/js/5-1-14.js"></script>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
